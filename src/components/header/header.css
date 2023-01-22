@@ -1,5 +1,5 @@
 header{
-    height: 110vh;
+    height: 99vh;
     padding-top: 3rem;
     overflow: hidden;
 }
@@ -15,6 +15,10 @@ header{
     display: flex;
     gap: 1.2rem;
     justify-content: center;
+}
+
+.iconsheader{
+    font-size: 1.7rem;
 }
 
 .header__socials{
@@ -38,13 +42,14 @@ header{
     background: linear-gradient(var(--color-primary),transparent);
     width: 22rem;
     height: 30rem;
-    position:absolute;
+    position: absolute;
     left: calc(50% - 11rem);
-    margin-top: 4rem;
+    margin-top: 3.5rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
 }
+
 
 
 .scroll__down{

@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 
@@ -38,11 +41,18 @@ body{
   color: var(--color-white);
   line-height: 1.7;
   background-image: url(../src/assets/brick-wall-dark.png);
+  overflow-x: hidden;
+  background-blend-mode: soft-light;
+}
+
+#root{
+  max-width: 1260px;
+  margin: 0 auto;
 }
 
 
 .container{
-  width: var(--container-width-lg);
+  /* width: var(--container-width-lg); */
   margin: 0 auto;
 }
 
@@ -112,6 +122,18 @@ img{
   object-fit: cover;
 }
 
+.itemdrag{
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 100%;
+}
+
+#root > div > canvas {
+  position: absolute;
+  left: 0;
+}
+
 @media screen and (max-width:1024px){
   .container{
     width: var(--container-width-md);
@@ -131,3 +153,6 @@ img{
     margin-bottom: 2rem;
   }
 }
+
+
+

@@ -1,9 +1,14 @@
-.experience__container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-
+#experience {
+    height: auto;
 }
+
+.experience__container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
 
 .experience__container > div {
     background: var(--color-bg-variant);
@@ -11,25 +16,34 @@
     border-radius: 2rem;
     border:1px solid transparent;
     transition: var(--transition);
+    display: flex;
+    gap: 3rem;
 }
 .experience__container > div:hover {
     background: transparent;
     border-color: var(--color-primary-variant );
     cursor: default;
+    mix-blend-mode: hard-light;
 }
 
 .experience__container > div h3 {
     text-align: center;
     margin-bottom: 2rem;
     color: var(--color-primary);
+    margin-block: auto;
 }
 
+.experience__details img{
+    width: 48px;
+    height: fit-content;
+    animation: animSkill2 2s infinite linear alternate;
+}
 
 .experience__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
-   
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .experience__details{
@@ -37,11 +51,40 @@
     gap:1rem;
 }
 
+.experience__details div{
+    place-self: center;
+
+}
+
 .experience__details_icon{
     margin-top: 6px;
     color: var(--color-primary);
 }
 
+
+#experience > h5, #experience > h3{
+    text-align: center;
+}
+
+
+@keyframes animSkill {
+    0% {
+      transform: scale(0.7) rotate(-15deg);
+    }
+    100% {
+      transform: scale(1) rotate(0);
+    }
+  }
+  
+  @keyframes animSkill2 {
+    0% {
+      transform: scale(0.7) rotate(15deg);
+    }
+    100% {
+      transform: scale(1) rotate(0);
+    }
+  }
+  
 
 
 @media screen and (max-width: 1024px) {

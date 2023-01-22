@@ -1,0 +1,163 @@
+#services{
+	margin: 0 auto!important;
+    padding: 0 !important;
+    left: 0;
+    position: absolute;
+    width: 100vw;
+	background-color: #ffffff;
+	display: flex;
+    overflow: hidden;
+}
+
+.card-body-img{
+	background-color: #ffffff !important;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    background-color: #2c2c6c;
+    display: inline-grid;
+    place-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.lien-projet{
+	width: 3rem;
+    height: 3rem;
+    background-color: #8F4700;
+	border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 200ms ease-in;
+}
+
+.icons{
+	font-size: 2.5rem;
+	margin-right: 5px;
+}
+
+.icons-lien {
+	font-size: 1.5rem ;
+	margin-right: 10px;
+	justify-self: end;
+}
+
+.icons  > div{
+margin-right: 20px;
+}
+
+.footer-card{
+	justify-self: end;
+	margin-right: 20px;
+}
+
+.projects{
+	flex-direction: column;
+	justify-content: center;
+}
+
+.imgweb{
+	width: 430px !important;
+    height: fit-content;
+	margin-right: 30px;
+	pointer-events: none;
+}
+
+.imgmobile{
+	max-width: 120px;
+	margin-right: 80px;
+	margin-left: 30px;
+	pointer-events: none;
+}
+
+.card-visuel{
+	background-color: white;
+	align-items: center;
+	padding-top: 10px;
+}
+
+
+.item{
+	margin-right: 20px;
+}
+
+.inner-carrousel{
+	display: flex;
+	overflow: hidden;
+	width: max-content;
+}
+
+.carrousel{
+	flex-basis:200vw ;
+	cursor: grab;
+	width: fit-content;
+	margin:  auto;
+	overflow: hidden;
+}
+
+
+.curtain {
+    width: 50%;
+    height: 90vh;
+    float: left;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.curtain-left {
+    animation-name: go-left;
+
+}
+
+.curtain-right {
+    animation-name: go-right;
+}
+
+@keyframes go-left {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    100% {
+        transform: translate(-70%, 0%);
+    }
+}
+
+@keyframes go-right {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    100% {
+        transform: translate(70%, 0%);
+    }
+}
+
+.curtain-element {
+    width: 10%;
+    height: 100%;
+    float: left;
+    border-bottom-right-radius: 67px;
+    border-bottom-left-radius: 67px;
+}
+
+.curtain-element > h5 {
+    text-align: center;
+}
+
+.title-service{
+    margin-top: 15vh;
+}
+
+/* Alternating color of curtain pieces */
+
+.curtain-element:nth-child(odd) {
+    background-color: #ba0f0f;
+}
+
+.curtain-element:nth-child(even) {
+    background-color: #d72525;
+}

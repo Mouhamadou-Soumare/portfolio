@@ -8,17 +8,25 @@ import Portfolio from './components/portfolio/Portfolio'
 import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import Motion from './components/motion/Motion'
+import Particle from './components/particleBack/Particle'
+import BackSeparator from './components/backSeparator/BackSeparator'
+import BackSeparator2 from './components/backSeparator2/BackSeparator2'
 
 
 const App = () => {
     return (
        <div>
+        <Particle/>
+        {/* <Motion/>  */}
         <Header/>
         <Nav/>
         <About/>
         <Experience />
-        <Services />
         <Portfolio />
+         <BackSeparator /> 
+        <Services />
+        <BackSeparator2/> 
         <Testimonials />
         <Contact />
         <Footer /> 
@@ -26,4 +34,4 @@ const App = () => {
         )
 }
 
-export default App
+export default App	

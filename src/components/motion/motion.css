@@ -1,0 +1,11 @@
+.item-drag {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 100%;
+  }
+  
+
+.container-motion{
+    max-width: fit-content;
+}

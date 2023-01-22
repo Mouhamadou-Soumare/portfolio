@@ -3,22 +3,25 @@ import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/photo.png'
 import HeaderSocials from "./HeaderSocials"
+import Particle from '../particleBack/Particle'
+
 
 const Header = () => {
     return (
         <header>
             <div className="container header__container">
-                <h5>Hello I'm</h5>
+                <h5>Bonjour, moi c'est </h5>
                 <h1>SOUMARE Mouhamadou</h1>
                 <h5 className="text-light">Développeur FullStack</h5>
-                <CTA/>
-                <HeaderSocials/>
+                <div className="iconsheader"><CTA/></div>
+                <div className="iconsheader"><HeaderSocials/></div>
+                
 
                 <div className="me">
                     <img src={ME} alt="Moi" />
                 </div>
 
-                <a href="#contact" className="scroll__down">Scroll Down</a>
+                <a href="#contact" className="scroll__down">La suite en bas</a>
 
             </div>
         </header>    
