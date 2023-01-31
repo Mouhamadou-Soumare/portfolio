@@ -50,6 +50,25 @@ body{
   margin: 0 auto;
 }
 
+body.light{
+  --color-bg : #fff;
+  --color-bg-variant: #FF6400 ;
+  --color-primary: #125B50;
+  --color-primary-variant: #A2B38B;
+  --color-white: black;
+  --color-light: black;
+  background-color: #FFDCA9;
+  background-image: url(../src/assets/back.svg);
+  color: black;
+  background-blend-mode: multiply;
+}
+.light  header > div > h5.text-light {
+  color: black;
+}
+
+.light .back-separator{
+
+}
 
 .container{
   /* width: var(--container-width-lg); */

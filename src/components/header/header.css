@@ -8,6 +8,10 @@ header{
     text-align: center;
     height: 100%;
     position: relative;
+    background-image: url(../../assets/WorldMap.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .cta{
