@@ -73,8 +73,9 @@ body.light{
   color: black;
 }
 
-.light .back-separator{
-
+.light .cta, .light h2, .light .scroll__down {
+  
+  font-weight: bold;
 }
 
 .container{

@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
-import "./services.css";
+import "./projets.css";
 import jmi from "../../assets/mobile.gif";
 import leafup from "../../assets/LeafUp11.gif";
 import jmiweb from "../../assets/jmiweb.gif";
@@ -9,13 +9,12 @@ import leafupWeb from "../../assets/leafupweb.gif";
 import AldiBnb from  "../../assets/AldiBnb.gif";
 import AldiBnbWeb from  "../../assets/AldiBnbWeb.gif";
 
-import { SiSymfony } from "react-icons/si";
 import { SiReact } from "react-icons/si";
 import { SiPhp } from "react-icons/si";
 import { FaCode } from "react-icons/fa";
 // import { RxLink2 } from "react-icons/rx";
 
-const Services = () => {
+const Projets = () => {
 
   const [width,setWidth] = useState(0);
   const carrousel = useRef();
@@ -25,7 +24,7 @@ const Services = () => {
     setWidth(carrousel.current.scrollWidth - carrousel.current.offsetWidth);
   },[])
   return (
-    <section id="services">
+    <section id="projets">
       <div className="curtain curtain-left">
         <div className="curtain-element"></div>
         <div className="curtain-element"></div>
@@ -93,7 +92,7 @@ const Services = () => {
         </div>
         <div className="footer-card">
           <div className="icons-lien flex">
-            <a class="lien-projet">
+            <a class="lien-projet" href="https://github.com/Mouhamadou-Soumare/JMI-Industries-Soumare-Gamo">
               <FaCode />
             </a>
           </div>
@@ -140,7 +139,7 @@ const Services = () => {
         </div>
         <div className="footer-card">
           <div className="icons-lien flex">
-            <a class="lien-projet">
+            <a class="lien-projet" href="https://github.com/choeurtis18/AldiBnB">
               <FaCode />
             </a>
           </div>
@@ -187,7 +186,7 @@ const Services = () => {
         </div>
         <div className="footer-card">
           <div className="icons-lien flex">
-            <a class="lien-projet">
+            <a class="lien-projet" href="https://github.com/choeurtis18/LeafUp-App-Front">
               <FaCode />
             </a>
           </div>
@@ -213,4 +212,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Projets;

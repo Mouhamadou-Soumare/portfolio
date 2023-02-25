@@ -7,7 +7,8 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
-import CodeIcon from '@mui/icons-material/Code';
+import {FaSuitcase} from 'react-icons/fa'
+import {MdSchool} from 'react-icons/md'
 import TungstenIcon from '@mui/icons-material/Tungsten';
 import './portfolio.css';
 
@@ -23,13 +24,13 @@ const Portfolio = () => {
           variant="body2"
           color="text.secondary"
         >
-                    10:00 am
+                    2021 - 2023
 
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="primary">
-            <CodeIcon />
+            <FaSuitcase />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -37,7 +38,7 @@ const Portfolio = () => {
           <Typography variant="h6" component="span">
           Alternant Développeur Full Stack
           </Typography>
-          <Typography>Alliantech  - Genevilliers, France - 2021 2023</Typography>
+          <Typography>Alliantech  - Genevilliers, France </Typography>
         </TimelineContent>
       </TimelineItem>
         <TimelineItem>
@@ -46,12 +47,12 @@ const Portfolio = () => {
           variant="body2"
           color="text.secondary"
         >
-                    10:00 am
+                    2021-2023
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="primary">
-            <TungstenIcon />
+            <MdSchool />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -59,7 +60,7 @@ const Portfolio = () => {
           <Typography variant="h6" component="span">
           Bachelor Développeur web
           </Typography>
-          <Typography>HETIC  - Montreuil, France - 2023</Typography>
+          <Typography>HETIC  - Montreuil, France </Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -69,13 +70,13 @@ const Portfolio = () => {
           variant="body2"
           color="text.secondary"
         >
-         10:00 am
+        Avril Juin 2021 (1 mois)
 
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot>
-            <CodeIcon />
+          <TimelineDot color="primary">
+            <FaSuitcase />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -83,7 +84,7 @@ const Portfolio = () => {
           <Typography variant="h6" component="span">
             Stage Développeur Web Wordrpess & Symfony
           </Typography>
-          <Typography>Escapade francaise - Paris, France - Avril Juin 2021 (1 mois) </Typography>
+          <Typography>Escapade francaise - Paris, France  </Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -92,12 +93,12 @@ const Portfolio = () => {
           variant="body2"
           color="text.secondary"
         >
-          10:00 am
+          2019 - 2021
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="primary">
-            <TungstenIcon />
+            <MdSchool />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -105,14 +106,21 @@ const Portfolio = () => {
           <Typography variant="h6" component="span">
           Diplôme universitaire de technologie en informatique 
           </Typography>
-          <Typography>IUT Paris Descartes  - Paris, France - 2021</Typography>
+          <Typography>IUT Paris Descartes  - Paris, France</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
+      <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          variant="body2"
+          color="text.secondary"
+        >
+          2019
+        </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector />
           <TimelineDot color="primary" >
-            <TungstenIcon />
+            <MdSchool />
           </TimelineDot>
           <TimelineConnector  />
         </TimelineSeparator>
@@ -120,14 +128,21 @@ const Portfolio = () => {
           <Typography variant="h6" component="span">
           Baccalauréat scientifique
           </Typography>
-          <Typography>Lycée Henri Wallon - Aubervilliers, France - 2019</Typography>
+          <Typography>Lycée Henri Wallon - Aubervilliers, France </Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
+      <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          variant="body2"
+          color="text.secondary"
+        >
+          2014
+        </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineConnector  />
           <TimelineDot color="primary" >
-            <TungstenIcon />
+            <MdSchool />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -135,7 +150,7 @@ const Portfolio = () => {
           <Typography variant="h6" component="span">
           Diplôme national du brevet
           </Typography>
-          <Typography>Lycée Français Théodore Monod - Nouakchott, Mauritanie - 2014</Typography>
+          <Typography>Lycée Français Théodore Monod - Nouakchott, Mauritanie </Typography>
         </TimelineContent>
       </TimelineItem>
     </Timeline>
