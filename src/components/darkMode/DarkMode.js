@@ -1,5 +1,6 @@
 import React from "react";
 import './darkmode.css';
+import {CgDarkMode} from 'react-icons/cg'
 
 
 const DarkMode = () => {
@@ -35,11 +36,12 @@ const DarkMode = () => {
       };
 
       return (
-        <button
-          className={theme === "dark" ? clickedClass : ""}
-          id="darkMode"
-          onClick={(e) => switchTheme(e)}
-        ></button>
+        
+        <CgDarkMode className={theme === "dark" ? clickedClass : ""}
+        id="darkMode"
+        onClick={(e) => switchTheme(e)}>
+        
+        </CgDarkMode>
       );    
 };
 

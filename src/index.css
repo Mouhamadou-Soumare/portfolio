@@ -29,6 +29,7 @@
 
 html{
   scroll-behavior: smooth;
+  min-height: 100%;
 }
 
 ::-webkit-scrollbar{
@@ -51,17 +52,23 @@ body{
 }
 
 body.light{
-  --color-bg : #fff;
-  --color-bg-variant: #FF6400 ;
-  --color-primary: #125B50;
-  --color-primary-variant: #A2B38B;
+  --color-bg : #ECE8DD;
+  --color-bg-variant: #E1D7C6 ;
+  --color-primary: #579BB1;
+  --color-primary-variant: #ECE8DD;
   --color-white: black;
   --color-light: black;
-  background-color: #FFDCA9;
-  background-image: url(../src/assets/back.svg);
+  background-color: #F8F4EA;
+  background-image: url(../src/assets/CircuiPrimary.svg);
   color: black;
-  background-blend-mode: multiply;
+  background-blend-mode: hard-light;
 }
+
+.light .header__container{
+  background-image: url(/src/assets/WorldMap.svg);
+
+}
+
 .light  header > div > h5.text-light {
   color: black;
 }
@@ -86,6 +93,7 @@ h1{
 section{
   margin-top: 8rem;
   height: 100vh;
+  scroll-snap-align: start;
 }
 
 section > h2,
@@ -171,7 +179,18 @@ img{
   section > h2{
     margin-bottom: 2rem;
   }
+
+  .light .header__container{
+    background-image: none;
+  }
+  
 }
 
 
 
+ @media (orientation: landscape)  and (hover: none) and (pointer: coarse) {
+  
+ section{
+  height: auto;
+ }
+}

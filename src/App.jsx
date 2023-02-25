@@ -8,19 +8,12 @@ import Portfolio from './components/portfolio/Portfolio'
 import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
-import Motion from './components/motion/Motion'
 import Particle from './components/particleBack/Particle'
-import BackSeparator from './components/backSeparator/BackSeparator'
-import BackSeparator2 from './components/backSeparator2/BackSeparator2'
-import DarkMode from './components/darkMode/DarkMode'
-
-
 
 const App = () => {
    
     return (
             <div >
-                <DarkMode />
                 <Particle/>
                 {/* <Motion/>  */}
                 <Header/>
@@ -28,11 +21,9 @@ const App = () => {
                 <About/>
                 <Experience />
                 <Portfolio />
-                <BackSeparator /> 
                 <Services />
-                <BackSeparator2/> 
-                <Testimonials />
-                <Contact />
+                {/* <Testimonials /> */}
+                {/* <Contact /> */}
                 <Footer /> 
             </div>
         )

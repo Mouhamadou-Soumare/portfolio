@@ -21,6 +21,8 @@
     transition: var(--transition);
 }
 
+
+
 .about__me-image:hover{
     transform: rotate(0);
 }
@@ -69,6 +71,7 @@
 .about__content p{
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
+    font-weight: 500;
 }
 
 @media screen and (max-width:1024px){
@@ -88,14 +91,23 @@
 }
 
 @media screen and (max-width:600px){
+   #about{
+    height: auto;
+   }
+
+   
     .about__me{
         width: 65%;
-        margin: 0 auto 3rem;
+        margin: 0 auto 2rem;
     }
 
     .about__cards{
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+    }
+
+    .about__container{
+        margin-top: inherit;
     }
 
     .about__content{
@@ -105,5 +117,13 @@
     .about__content p{
         margin: 1.5rem 0;
     }
-    
+    .about__container {
+        gap: 2rem;
+    }
+}
+
+@media (orientation: landscape)  and (hover: none) and (pointer: coarse)  {
+    .about__me{
+        width: 25%;
+    }
 }

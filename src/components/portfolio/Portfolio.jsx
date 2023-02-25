@@ -6,15 +6,10 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import FastfoodIcon from '@mui/icons-material/Fastfood';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import HotelIcon from '@mui/icons-material/Hotel';
-import RepeatIcon from '@mui/icons-material/Repeat';
 import Typography from '@mui/material/Typography';
 import CodeIcon from '@mui/icons-material/Code';
 import TungstenIcon from '@mui/icons-material/Tungsten';
-import './portfolio.css'
-import Particle from '../particleBack/Particle'
+import './portfolio.css';
 
 const Portfolio = () => {
     return (
@@ -116,10 +111,10 @@ const Portfolio = () => {
       <TimelineItem>
         <TimelineSeparator>
           <TimelineConnector />
-          <TimelineDot color="primary" variant="outlined">
+          <TimelineDot color="primary" >
             <TungstenIcon />
           </TimelineDot>
-          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+          <TimelineConnector  />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
           <Typography variant="h6" component="span">
@@ -130,8 +125,8 @@ const Portfolio = () => {
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-          <TimelineDot color="secondary">
+          <TimelineConnector  />
+          <TimelineDot color="primary" >
             <TungstenIcon />
           </TimelineDot>
           <TimelineConnector />

@@ -11,7 +11,6 @@
 }
 
 
-
 #root > div > section.portfolio > div > div:nth-child(1) > span,
 #root > div > section.portfolio > div > div:nth-child(3) > span{
     background: #2c2c6c !important;
@@ -21,4 +20,20 @@
 .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content-arrow,
 .vertical-timeline--two-columns .vertical-timeline-element-content-arrow {
     top:30px !important;
+}
+
+@media screen and (max-width: 600px) {
+
+    .portfolio{
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .css-2ulfj5-MuiTypography-root{
+        font-size: initial !important;
+    }
+
+    .css-ahj2mt-MuiTypography-root{
+        font-size:small  !important;
+    }
 }

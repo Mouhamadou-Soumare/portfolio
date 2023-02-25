@@ -39,14 +39,16 @@ const About = () => {
                             <small>+ de 10 projets aboutis </small>
                         </article>
                     </div>
-                    <p>Tombé dans une marmite d'octets étant tout petit et né à la période de l'explosion
-                         de la bulle internet et de la high-tech, j'en fais aujourd'hui ma passion et mon métier.
-                          Je m'appelle Mouhamadou et je suis développeur web, je me suis lancé dans le domaine tout de suite après mon Baccalauréat. Le DUT Informatique à Paris Descartes 
-                          et le bachelor développeur web à Hetic sont deux formations qui m'ont permis d'acquérir les fondations et compétences 
-                          individuelles et collectives nécessaires pour occuper ce rôle. Durant ces 4 dernières années,
-                           je n'ai cessé de me plonger dans ce vaste univers, toujours avec curiosité et soif d'en apprendre plus.
-                            Mes deux expériences professionnelles à Escapade Française et Alliantech m'ont quant à eux permis d'entrer 
-                            et d'avoir une première approche du monde du travail, la capacité a endossé des responsabilités, de l'autonomie ...
+                    <p>Tombé dans une marmite d'octets étant tout petit,
+                         je suis aujourdh'ui un passioné de l'informatique.
+                          Je m'appelle Mouhamadou, un développeur web. 
+                           Né durant l'explosion de la bulle internet et de la high-tech,
+                            je me suis formé dans le domaine à Paris Descartes et à Hetic. 
+                            Avec 4 années d'expérience, j'ai acquis les compétences et les connaissances 
+                            nécessaires pour exceller dans ce domaine, en me plongeant sans cesse dans ce vaste 
+                            univers avec curiosité et soif d'apprendre. Mes expériences professionnelles chez Escapade
+                             Française et Alliantech m'ont permis d'acquérir une première approche du monde du travail, 
+                             ainsi que la capacité à endosser des responsabilités, travailler en équipe et à travailler de manière autonome...
                     </p>
 
                     <a href="#contact" className='btn btn-primary'>Parlons</a>

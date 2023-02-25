@@ -1,8 +1,8 @@
 #darkMode {
-    background-color: red;
-    background-size: 30px 30px;
-    width: 45px;
+  background: transparent;
+  background-size: 30px 30px;
     height: 45px;
+    width: 20px;
     filter: grayscale(100%);
     border: none;
     border-radius: 50%;
@@ -12,11 +12,10 @@
   #darkMode:hover,
   #darkMode:focus {
     filter: none;
-    background-color: black;
+    background: transparent;
     cursor: pointer;
   }
   
   #darkMode.clicked {
     filter: none !important;
-    background-color: black;
   }

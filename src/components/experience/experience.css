@@ -8,8 +8,10 @@
     gap: 3rem;
 }
 
-
-
+.experience__frontend , .experience__backend{
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .experience__container > div {
     background: var(--color-bg-variant);
     padding: 2.4rem 5rem;
@@ -41,6 +43,7 @@
 
 .experience__content {
     display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
     align-items: center;
@@ -109,4 +112,9 @@
     .experience__container {
         gap: 1rem;
     }
+
+    .experience__details img{
+        animation: none;
+    }
+
 }

@@ -80,20 +80,16 @@ const Services = () => {
         </div>
 
         <div>
-          <a
-            href=""
-            className="card-body flex flex-col items-center md:flex-row md:max-w-xl"
-          >
+          
             <div className="flex flex-col justify-between p-4 leading-normal">
               <h5 className="mb-2 text-2xl font-bold tracking-tight">
                 JMI Industries, un site de location de voiture
               </h5>
-              <p className="mb-3 font-normal">
+              <p className="mb-3 font-normal text-projet">
                 Here are the biggest enterprise technology acquisitions
                 of 2021 so far, in reverse chronological order.
               </p>
             </div>
-          </a>
         </div>
         <div className="footer-card">
           <div className="icons-lien flex">
@@ -131,20 +127,16 @@ const Services = () => {
         </div>
 
         <div>
-          <a
-            href=""
-            className="card-body flex flex-col items-center md:flex-row md:max-w-xl"
-          >
+   
             <div className="flex flex-col justify-between p-4 leading-normal">
               <h5 className="mb-2 text-2xl font-bold tracking-tight">
                 AldiBnb, louez votre logement  !
               </h5>
-              <p className="mb-3 font-normal">
+              <p className="mb-3 font-normal text-projet">
                 Here are the biggest enterprise technology acquisitions
                 of 2021 so far, in reverse chronological order.
               </p>
             </div>
-          </a>
         </div>
         <div className="footer-card">
           <div className="icons-lien flex">
@@ -182,20 +174,16 @@ const Services = () => {
         </div>
 
         <div>
-          <a
-            href=""
-            className="card-body flex flex-col items-center md:flex-row md:max-w-xl"
-          >
+         
             <div className="flex flex-col justify-between p-4 leading-normal">
               <h5 className="mb-2 text-2xl font-bold tracking-tight">
                 Leaf'Up, la serre connectée
               </h5>
-              <p className="mb-3 font-normal">
+              <p className="mb-3 font-normal text-projet">
                 Here are the biggest enterprise technology acquisitions
                 of 2021 so far, in reverse chronological order.
               </p>
             </div>
-          </a>
         </div>
         <div className="footer-card">
           <div className="icons-lien flex">
@@ -210,7 +198,6 @@ const Services = () => {
 </motion.div>
 </motion.div>
     <div className="curtain curtain-right">
-        <div className="curtain-element"></div>
         <div className="curtain-element"></div>
         <div className="curtain-element"></div>
         <div className="curtain-element"></div>
