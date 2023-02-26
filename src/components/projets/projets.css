@@ -184,6 +184,7 @@ margin-right: 20px;
 
     .imgmobile{
         max-height: 550px;
+        min-height: 480px;
         max-width: fit-content;
         margin: 1rem auto;
     }
