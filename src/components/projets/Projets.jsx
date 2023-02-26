@@ -129,7 +129,7 @@ const Projets = () => {
    
             <div className="flex flex-col justify-between p-4 leading-normal">
               <h5 className="mb-2 text-2xl font-bold tracking-tight">
-                AldiBnb, louez votre logement lalala  !
+                AldiBnb, louez votre logement  !
               </h5>
               <p className="mb-3 font-normal text-projet">
                 Here are the biggest enterprise technology acquisitions
