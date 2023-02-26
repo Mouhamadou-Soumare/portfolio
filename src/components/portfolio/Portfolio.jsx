@@ -22,7 +22,7 @@ const Portfolio = () => {
         <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
           variant="body2"
-          color="text.secondary"
+          color="#1976d2"
         >
                     2021 - 2023
 
@@ -45,7 +45,7 @@ const Portfolio = () => {
         <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
           variant="body2"
-          color="text.secondary"
+          color="#1976d2"
         >
                     2021-2023
         </TimelineOppositeContent>
@@ -68,7 +68,7 @@ const Portfolio = () => {
           sx={{ m: 'auto 0' }}
           align="right"
           variant="body2"
-          color="text.secondary"
+          color="#1976d2"
         >
         Avril Juin 2021 (1 mois)
 
@@ -91,7 +91,7 @@ const Portfolio = () => {
         <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
           variant="body2"
-          color="text.secondary"
+          color="#1976d2"
         >
           2019 - 2021
         </TimelineOppositeContent>
@@ -113,7 +113,7 @@ const Portfolio = () => {
       <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
           variant="body2"
-          color="text.secondary"
+          color="#1976d2"
         >
           2019
         </TimelineOppositeContent>
@@ -135,7 +135,7 @@ const Portfolio = () => {
       <TimelineOppositeContent
           sx={{ m: 'auto 0' }}
           variant="body2"
-          color="text.secondary"
+          color="#1976d2"
         >
           2014
         </TimelineOppositeContent>

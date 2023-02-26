@@ -36,16 +36,6 @@ html{
   display: none;
 }
 
-body{
-  font-family: "Poppins",sans-serif;
-  background: var(--color-bg);
-  color: var(--color-white);
-  line-height: 1.7;
-  background-image: url(../src/assets/brick-wall-dark.png);
-  overflow-x: hidden;
-  background-blend-mode: soft-light;
-}
-
 #root{
   max-width: 1260px;
   margin: 0 auto;
@@ -63,6 +53,17 @@ body.light{
   color: black;
   background-blend-mode: hard-light;
 }
+
+body{
+  font-family: "Poppins",sans-serif;
+  background: var(--color-bg);
+  color: var(--color-white);
+  line-height: 1.7;
+  background-image: url(../src/assets/brick-wall-dark.png);
+  overflow-x: hidden;
+  background-blend-mode: soft-light;
+}
+
 
 .light .header__container{
   background-image: url(/src/assets/WorldMap.svg);
@@ -182,6 +183,10 @@ img{
   }
 
   .light .header__container{
+    background-image: none;
+  }
+
+  body.light{
     background-image: none;
   }
   
