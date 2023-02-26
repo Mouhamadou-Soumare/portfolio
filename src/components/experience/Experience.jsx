@@ -15,7 +15,6 @@ import figma from "../../assets/icons/figma.svg";
 import wordpress from "../../assets/icons/wordrpess.svg";
 import prestashop from "../../assets/icons/Prestashop.svg";
 
-
 const Experience = () => {
   return (
     <section id="experience">

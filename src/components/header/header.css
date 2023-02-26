@@ -1,141 +1,141 @@
-header{
-    height: 100vh;
-    padding-top: 3rem;
-    overflow: hidden;
+header {
+	height: 100vh;
+	padding-top: 3rem;
+	overflow: hidden;
 }
 
-.header__container{
-    text-align: center;
-    height: 100%;
-    position: relative;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.header__container {
+	text-align: center;
+	height: 100%;
+	position: relative;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
-.cta{
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 1.2rem;
-    justify-content: center;
+.cta {
+	margin-top: 2.5rem;
+	display: flex;
+	gap: 1.2rem;
+	justify-content: center;
 }
 
-.iconsheader{
-    font-size: 1.7rem;
+.iconsheader {
+	font-size: 1.7rem;
 }
 
-.header__socials{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    position: absolute;
-    left:0;
-    bottom: 3rem;
+.header__socials {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.8rem;
+	position: absolute;
+	left: 0;
+	bottom: 3rem;
 }
 
-.header__socials::after{
-    content: '';
-    width: 1px;
-    height: 3rem;
-    background: var(--color-primary);
+.header__socials::after {
+	content: '';
+	width: 1px;
+	height: 3rem;
+	background: var(--color-primary);
 }
 
-.me{
-    background: linear-gradient(var(--color-primary),transparent);
-    width: 22rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 3.5rem;
-    border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
-    padding: 3rem 1.5rem 1.5rem 1.5rem;
-    
-}
-
-.me img{
-    animation: profile__animate 3s ease-in-out infinite 1s;
-}
-
-.scroll__down{
-    position: absolute;
-    right: -2.3rem;
-    bottom: 5rem;
-    transform: rotate(90deg);
-    font-weight: 200;
-    font-size: 0.9rem;
-    color: var(--color-primary);
-    
+.me {
+	background: linear-gradient(var(--color-primary), transparent);
+	width: 22rem;
+	height: 30rem;
+	position: absolute;
+	left: calc(50% - 11rem);
+	margin-top: 3.5rem;
+	border-radius: 12rem 12rem 0 0;
+	overflow: hidden;
+	padding: 3rem 1.5rem 1.5rem 1.5rem;
 
 }
 
+.me img {
+	animation: profile__animate 3s ease-in-out infinite 1s;
+}
+
+.scroll__down {
+	position: absolute;
+	right: -2.3rem;
+	bottom: 5rem;
+	transform: rotate(90deg);
+	font-weight: 200;
+	font-size: 0.9rem;
+	color: var(--color-primary);
 
 
+}
 
 
-@media screen and (max-width:600px){
-    
+@media screen and (max-width:600px) {
 
-    .header__socials, .scroll__down{
-        display: none;
-    }
 
-    .header__container h1{
-        font-size: xx-large;
-    }
+	.header__socials,
+	.scroll__down {
+		display: none;
+	}
 
-    #root > div > canvas{
-        display: none;
-    }
+	.header__container h1 {
+		font-size: xx-large;
+	}
 
-    .me{
-        height: auto;
-        left: calc(50% - 10rem);
-        width: inherit;
-    }
-    
-    .cta{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: x-large;
-    }
+	#root>div>canvas {
+		display: none;
+	}
+
+	.me {
+		height: auto;
+		left: calc(50% - 10rem);
+		width: inherit;
+	}
+
+	.cta {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: x-large;
+	}
 }
 
 @keyframes profile__animate {
 
-    0%{
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-    50%{
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-    }
-    100%{
-        border-radius: 60% 40% 3% 70%/60% 30% 70% 40%;
-    }
+	0% {
+		border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+	}
+
+	50% {
+		border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+	}
+
+	100% {
+		border-radius: 60% 40% 3% 70%/60% 30% 70% 40%;
+	}
 }
 
-@media (orientation: landscape)  and (hover: none) and (pointer: coarse) {
-    /* your CSS to target only landscape mobile users */
-    .iconsheader {
-        font-size: smaller;
-    }
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
 
-    header{
-        height: 125vh;
-    }
-    
-    
+	/* your CSS to target only landscape mobile users */
+	.iconsheader {
+		font-size: smaller;
+	}
 
-    .me{
-        width: 11rem;
-        height: 10rem;
-        position: absolute;
-        left: calc(50% - 5rem);
-    }
+	header {
+		height: 125vh;
+	}
 
-    h1{
-        font-size: 2rem;
-    }
+
+	.me {
+		width: 11rem;
+		height: 10rem;
+		position: absolute;
+		left: calc(50% - 5rem);
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
 }

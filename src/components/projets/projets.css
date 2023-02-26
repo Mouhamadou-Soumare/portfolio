@@ -1,260 +1,264 @@
-#projets{
-	margin: 0 auto!important;
-    padding: 0 !important;
-    left: 0;
-    position: absolute;
-    width: 100vw;
+#projets {
+	margin: 0 auto !important;
+	padding: 0 !important;
+	left: 0;
+	position: absolute;
+	width: 100vw;
 	display: flex;
-    overflow: hidden;
+	overflow: hidden;
 }
 
-.card-body-img{
+.card-body-img {
 	background-color: var(--color-light) !important;
 }
 
-.card-text{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-bg-variant);
-    display: inline-grid;
-    place-items: center;
+.card-text {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-bg-variant);
+	display: inline-grid;
+	place-items: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
-.lien-projet{
+.lien-projet {
 	width: 3rem;
-    height: 3rem;
-    background-color: #8F4700;
+	height: 3rem;
+	background-color: #8F4700;
 	border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 200ms ease-in;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: transform 200ms ease-in;
 }
 
-.icons{
+.titre-projet {
+	text-align: center;
+}
+
+.icons {
 	font-size: 2.5rem;
 	margin-right: 5px;
 }
 
 .icons-lien {
-	font-size: 1.5rem ;
+	font-size: 1.5rem;
 	margin-right: 10px;
 	justify-self: end;
 }
 
-.icons  > div{
-margin-right: 20px;
+.icons>div {
+	margin-right: 20px;
 }
 
-.footer-card{
+.footer-card {
 	justify-self: end;
 	margin-right: 20px;
 }
 
-.projects{
+.projects {
 	flex-direction: column;
 	justify-content: center;
 }
 
-.imgweb{
+.imgweb {
 	width: 430px !important;
-    height: fit-content;
+	height: fit-content;
 	margin-right: 30px;
 	pointer-events: none;
 }
 
-.imgmobile{
+.imgmobile {
 	max-width: 120px;
 	margin-right: 80px;
 	margin-left: 30px;
 	pointer-events: none;
 }
 
-.card-visuel{
+.card-visuel {
 	background-color: white;
 	align-items: center;
 	padding-top: 10px;
+	justify-content: center;
 }
 
 
-.item{
+.item {
 	margin-right: 20px;
 }
 
-.inner-carrousel{
+.inner-carrousel {
 	display: flex;
 	overflow: hidden;
 	width: max-content;
 }
 
-.carrousel{
-	flex-basis:200vw ;
+.carrousel {
+	flex-basis: 200vw;
 	cursor: grab;
 	width: fit-content;
-	margin:  auto;
+	margin: auto;
 	overflow: hidden;
 }
 
 
 .curtain {
-    width: 50%;
-    height: 90vh;
-    float: left;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
+	width: 50%;
+	height: 90vh;
+	float: left;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
 }
 
 .curtain-left {
-    animation-name: go-left;
+	animation-name: go-left;
 
 }
 
 .curtain-right {
-    animation-name: go-right;
+	animation-name: go-right;
 }
 
 @keyframes go-left {
-    0% {
-        transform: translate(0%, 0%);
-    }
-    100% {
-        transform: translate(-70%, 0%);
-    }
+	0% {
+		transform: translate(0%, 0%);
+	}
+
+	100% {
+		transform: translate(-70%, 0%);
+	}
 }
 
 @keyframes go-right {
-    0% {
-        transform: translate(0%, 0%);
-    }
-    100% {
-        transform: translate(70%, 0%);
-    }
+	0% {
+		transform: translate(0%, 0%);
+	}
+
+	100% {
+		transform: translate(70%, 0%);
+	}
 }
 
 .curtain-element {
-    width: 10%;
-    height: 100%;
-    float: left;
-    border-bottom-right-radius: 67px;
-    border-bottom-left-radius: 67px;
+	width: 10%;
+	height: 100%;
+	float: left;
+	border-bottom-right-radius: 67px;
+	border-bottom-left-radius: 67px;
 }
 
-.curtain-element > h5 {
-    text-align: center;
+.curtain-element>h5 {
+	text-align: center;
 }
 
-.title-service{
-    margin-top: 15vh;
+.title-service {
+	margin-top: 15vh;
 }
 
 /* Alternating color of curtain pieces */
 
-.curtain-element:nth-child(odd),.curtain-right .curtain-element:nth-child(even) {
-    background-color: transparent;
+.curtain-element:nth-child(odd),
+.curtain-right .curtain-element:nth-child(even) {
+	background-color: transparent;
 }
 
-.curtain-element:nth-child(even), .curtain-right .curtain-element:nth-child(odd) {
-    background-color: var(--color-bg-variant);
+.curtain-element:nth-child(even),
+.curtain-right .curtain-element:nth-child(odd) {
+	background-color: var(--color-bg-variant);
 }
 
 @media screen and (max-width: 600px) {
 
-    .curtain{
-        display: none;
-    }
+	.curtain {
+		display: none;
+	}
 
-    .carrousel{
-        cursor: none !important;
-        flex-basis: initial;
-        margin: 15%;
-    }
+	.carrousel {
+		cursor: none !important;
+		flex-basis: initial;
+		margin: 15%;
+	}
 
 
-    .item{
-        margin-right: initial;
-    }
+	.item {
+		margin-right: initial;
+	}
 
-    .imgweb{
-        display: none;
-    }
+	.imgweb {
+		display: none;
+	}
 
-    .imgmobile{
-        width: auto;
-        height: 500px;
-        max-width: none !important;
-        margin: 1rem auto;
-    }
+	.imgmobile {
+		width: auto;
+		height: 500px;
+		max-width: none !important;
+		margin: 1rem auto;
+	}
 
-    .text-projet{
-        display: none;
-    }
-    
-    .card-visuel{
-        justify-content: center;
-    }
+	.text-projet {
+		display: none;
+	}
 
-    #projets{
-        height: auto;
-        position: initial;
-        width: initial;
-        margin-bottom: 5rem !important;
-    }
+	.card-visuel {
+		justify-content: center;
+	}
 
-    .inner-carrousel{
-        display: flex;
-        flex-wrap: wrap;
-        width: initial;
-        justify-content: center;
-        gap: 3rem;
-    }
+	#projets {
+		height: auto;
+		position: initial;
+		width: initial;
+		margin-bottom: 5rem !important;
+	}
+
+	.inner-carrousel {
+		display: flex;
+		flex-wrap: wrap;
+		width: initial;
+		justify-content: center;
+		gap: 3rem;
+	}
 }
 
-@media (orientation: landscape)  and (hover: none) and (pointer: coarse) {
-    /* your CSS to target only landscape mobile users   */
-    
-    #projets {
-      margin: 5rem auto !important;
-  }
-  
-  .curtain-left,.curtain-right{
-    display: none;
-  }
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+	/* your CSS to target only landscape mobile users   */
 
-  .imgmobile{
-    display: none;
-  }
+	#projets {
+		margin: 5rem auto !important;
+	}
 
-  .imgweb{
-    margin-right: initial;
-  }
+	.curtain-left,
+	.curtain-right {
+		display: none;
+	}
 
-  .card-visuel{
-    justify-content: center;
-  }
 
-  .card-text,.card-visuel{
-    width: 400px;
-  }
-  
-  .text-projet{
-    display: none;
-  }
+	.card-visuel {
+		display: none;
+	}
 
-  .inner-carrousel{
-    display: flex;
-    flex-wrap: wrap;
-    width: initial;
-    justify-content: center;
-    gap: 3rem;
+	.card-text,
+	.card-visuel {
+		width: 400px;
+	}
+
+	.text-projet {
+		display: none;
+	}
+
+	.inner-carrousel {
+		display: flex;
+		flex-wrap: wrap;
+		width: initial;
+		justify-content: center;
+		gap: 3rem;
+	}
+
+	.carrousel {
+		cursor: none !important;
+	}
+
+
 }
-
-    .carrousel{
-        cursor: none !important;
-    }
-
-
-  } 
