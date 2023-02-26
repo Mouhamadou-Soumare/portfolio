@@ -9,12 +9,11 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import {FaSuitcase} from 'react-icons/fa'
 import {MdSchool} from 'react-icons/md'
-import TungstenIcon from '@mui/icons-material/Tungsten';
 import './portfolio.css';
 
 const Portfolio = () => {
     return (
-     <section className="portfolio">
+     <section className="portfolio" id="portfolio">
             <h5>Apprendre à me connaitre </h5>
             <h2>A propos de moi !</h2>
        <Timeline position="alternate">

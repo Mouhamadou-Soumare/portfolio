@@ -115,7 +115,11 @@
 
     .experience__details img{
         animation: none;
-        height: min-content;
+        max-height: 45px;
+    }
+
+    .experience__container > div:hover {
+        background: var(--color-bg-variant);
     }
 
 }

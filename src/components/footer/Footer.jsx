@@ -14,9 +14,9 @@ const Footer = () => {
                         <div className="blank-div"></div>
                         <div className="footer-links">
                             <div className="icons-footer">
-                                <FaGithub/>
-                                <FaLinkedin/>
-                                <GrMail />
+                               <a href="https://github.com/Mouhamadou-Soumare"> <FaGithub/> </a>
+                               <a href="https://www.linkedin.com/in/mouhamadou-soumare/"><FaLinkedin/></a> 
+                               <a href="mail:mouhamadou-soumare@hotmail.com"><GrMail /></a>
                             </div>
                         </div>
                     </div>

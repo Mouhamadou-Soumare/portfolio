@@ -49,7 +49,6 @@ body.light{
   --color-white: black;
   --color-light: black;
   background-color: #F8F4EA;
-  background-image: url(../src/assets/CircuiPrimary.svg);
   color: black;
   background-blend-mode: hard-light;
 }
@@ -186,10 +185,7 @@ img{
     background-image: none;
   }
 
-  body.light{
-    background-image: none;
-  }
-  
+
 }
 
 

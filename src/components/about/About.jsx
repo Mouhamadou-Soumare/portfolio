@@ -39,19 +39,16 @@ const About = () => {
                             <small>+ de 10 projets aboutis </small>
                         </article>
                     </div>
-                    <p>Tombé dans une marmite d'octets étant tout petit,
-                         je suis aujourdh'ui un passioné de l'informatique.
-                          Je m'appelle Mouhamadou, un développeur web. 
-                           Né durant l'explosion de la bulle internet et de la high-tech,
-                            je me suis formé dans le domaine à Paris Descartes et à Hetic. 
-                            Avec 4 années d'expérience, j'ai acquis les compétences et les connaissances 
-                            nécessaires pour exceller dans ce domaine, en me plongeant sans cesse dans ce vaste 
-                            univers avec curiosité et soif d'apprendre. Mes expériences professionnelles chez Escapade
-                             Française et Alliantech m'ont permis d'acquérir une première approche du monde du travail, 
-                             ainsi que la capacité à endosser des responsabilités, travailler en équipe et à travailler de manière autonome...
+                    <p>Tombé dans une marmite d'octets étant tout petit, je suis aujourd'hui un passionné de l'informatique.
+                         Je m'appelle Mouhamadou, né durant l'explosion de la bulle internet et de la high-tech, je me suis 
+                         formé dans le domaine informatique à Paris Descartes et à Hetic. Avec 4 années d'expérience, en me
+                          plongeant sans cesse dans ce vaste univers avec curiosité et soif d'apprendre, j'ai acquis les compétences
+                           nécessaires pour réussir dans ce domaine. Mes expériences professionnelles chez Escapade Française et
+                            Alliantech m'ont permis d'acquérir une première approche du monde du travail, ainsi que la capacité
+                             à endosser des responsabilités, travailler en équipe et à travailler de manière autonome...
                     </p>
 
-                    <a href="#contact" className='btn btn-primary'>Parlons</a>
+                    {/* <a href="#contact" className='btn btn-primary'>Parlons</a> */}
                 </div>
             </div>
 
