@@ -1,11 +1,12 @@
 #projets {
-	margin: 0 auto !important;
-	padding: 0 !important;
-	left: 0;
-	position: absolute;
-	width: 100vw;
 	display: flex;
-	overflow: hidden;
+	flex-direction: row;
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
 }
 
 .card-body-img {
@@ -208,9 +209,7 @@
 
 	#projets {
 		height: auto;
-		position: initial;
-		width: initial;
-		margin-bottom: 5rem !important;
+		margin-bottom: 5rem;
 	}
 
 	.inner-carrousel {
@@ -222,12 +221,8 @@
 	}
 }
 
-@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+@media (orientation: landscape) and (max-height: 575.98px) and (hover: none) and (pointer: coarse) {
 	/* your CSS to target only landscape mobile users   */
-
-	#projets {
-		margin: 5rem auto !important;
-	}
 
 	.curtain-left,
 	.curtain-right {

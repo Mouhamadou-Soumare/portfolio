@@ -98,9 +98,13 @@ h1 {
 }
 
 section {
-	margin-top: 8rem;
-	height: 100vh;
-	scroll-snap-align: start;
+    margin-top: 8rem;
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 section>h2,
@@ -195,7 +199,7 @@ img {
 }
 
 
-@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+@media (orientation: landscape) and (max-height: 575.98px) and (hover: none) and (pointer: coarse) {
 
 	section {
 		height: auto;

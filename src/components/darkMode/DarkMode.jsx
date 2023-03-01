@@ -20,16 +20,16 @@ const DarkMode = () => {
   }
 
   const switchTheme = (e) => {
-    if (theme === darkTheme) {
-      body.classList.replace(darkTheme, lightTheme);
-      e.target.classList.remove(clickedClass);
-      localStorage.setItem("theme", "light");
-      theme = lightTheme;
-    } else {
+    if (theme === lightTheme) {
       body.classList.replace(lightTheme, darkTheme);
-      e.target.classList.add(clickedClass);
+      e.target.classList.remove(clickedClass);
       localStorage.setItem("theme", "dark");
       theme = darkTheme;
+    } else {
+      body.classList.replace(darkTheme , lightTheme);
+      e.target.classList.add(clickedClass);
+      localStorage.setItem("theme", "light");
+      theme = lightTheme;
     }
   };
 
