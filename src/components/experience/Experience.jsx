@@ -18,7 +18,7 @@ import prestashop from "../../assets/icons/Prestashop.svg";
 const Experience = () => {
   return (
     <section id="experience">
-      <h3>Les technologies que j'utilise</h3>
+      <h5>Les technologies que j'utilise</h5>
       <h2>SKILLS</h2>
 
       <div className="container experience__container">
@@ -26,37 +26,37 @@ const Experience = () => {
           <h3>Frontend</h3>
           <div className="experience__content">
             <article className="experience__details">
-              <img src={reactjs} />
+              <img src={reactjs} alt="react" />
               <div>
                 <h4>React</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={bootstrap} alt="" />
+              <img src={bootstrap} alt="bootstrap" />
               <div>
                 <h4>Bootstrap</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={tailwind} alt="" />
+              <img src={tailwind} alt="tailwind" />
               <div>
                 <h4>Tailwind</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={js} alt="" />
+              <img src={js} alt="javascript" />
               <div>
                 <h4>JavaScript</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={html} alt="" />
+              <img src={html} alt="html" />
               <div>
                 <h4>HTML</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={css} alt="" />
+              <img src={css} alt="css" />
               <div>
                 <h4>CSS</h4>
               </div>
@@ -67,27 +67,27 @@ const Experience = () => {
           <h3>Backend</h3>
           <div className="experience__content">
             <article className="experience__details">
-              <img src={php} alt="" />
+              <img src={php} alt="php" />
               <div>
                 <h4>PHP</h4>
               </div>
             </article>
 
             <article className="experience__details">
-              <img src={mysql} alt="" />
+              <img src={mysql} alt="mysql" />
               <div>
                 <h4>PhpMyAdmin</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={symfony} alt="" />
+              <img src={symfony} alt="symfony" />
               <div>
                 {" "}
                 <h4>Symfony</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={cplusplus} alt="" />
+              <img src={cplusplus} alt="c++" />
               <div>
                 <h4>C++</h4>
               </div>
@@ -98,27 +98,27 @@ const Experience = () => {
           <h3>Autres</h3>
           <div className="experience__content">
             <article className="experience__details">
-              <img src={docker} alt="" />
+              <img src={docker} alt="docker" />
               <div>
                 <h4>Docker</h4>
               </div>
             </article>
 
             <article className="experience__details">
-              <img src={figma} alt="" />
+              <img src={figma} alt="figma" />
               <div>
                 <h4>Figma</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={wordpress} alt="" />
+              <img src={wordpress} alt="wordpress" />
               <div>
                 {" "}
                 <h4>WordPress</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={prestashop} alt="" />
+              <img src={prestashop} alt="prestashop" />
               <div>
                 <h4>Prestashop</h4>
               </div>

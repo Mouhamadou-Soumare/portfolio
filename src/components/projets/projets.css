@@ -7,6 +7,7 @@
 	right: 50%;
 	margin-left: -50vw;
 	margin-right: -50vw;
+	overflow-x: hidden;
 }
 
 .card-body-img {
@@ -26,7 +27,7 @@
 .lien-projet {
 	width: 3rem;
 	height: 3rem;
-	background-color: #8F4700;
+	background-color: var(--color-white);
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
@@ -35,7 +36,21 @@
 }
 
 .titre-projet {
+	text-align: center;	
+}
+
+.titre-projets-section{
+	position: absolute;
 	text-align: center;
+	top: 1rem;
+}
+.titre-projets-section > h2 svg{
+	color: var(--color-primary);
+	margin: auto;
+}
+
+.titre-projets-section > h5 {
+	color: var(--color-light);
 }
 
 .icons {
@@ -87,6 +102,7 @@
 
 .item {
 	margin-right: 20px;
+	max-width: 50rem;
 }
 
 .inner-carrousel {
@@ -153,10 +169,20 @@
 
 .curtain-element>h5 {
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.curtain-element>h5 svg{
+	margin: auto;
 }
 
 .title-service {
 	margin-top: 15vh;
+}
+
+.item:nth-child(4){
+	visibility: hidden;
 }
 
 /* Alternating color of curtain pieces */

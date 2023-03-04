@@ -68,13 +68,6 @@
 	color: var(--color-primary);
 }
 
-
-#experience>h5,
-#experience>h3 {
-	text-align: center;
-}
-
-
 @keyframes animSkill {
 	0% {
 		transform: scale(0.7) rotate(-15deg);

@@ -3,7 +3,6 @@ import "./header.css";
 import CTA from "./CTA";
 import ME from "../../assets/photo.png";
 import HeaderSocials from "./HeaderSocials";
-import Particle from "../particleBack/Particle";
 
 const Header = () => {
   return (

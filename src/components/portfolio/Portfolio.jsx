@@ -68,7 +68,7 @@ const Portfolio = () => {
             variant="body2"
             color="#1976d2"
           >
-            Avril Juin 2021 (1 mois)
+            Avril - Juin 2021 (1 mois)
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />

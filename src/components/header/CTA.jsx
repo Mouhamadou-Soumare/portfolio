@@ -11,7 +11,7 @@ const CTA = () => {
         href="mailto:mouhamadou-soumare@hotmail.com "
         className="btn btn-primary"
       >
-        Contactez moi
+        Contactez-moi
       </a>
     </div>
   );
