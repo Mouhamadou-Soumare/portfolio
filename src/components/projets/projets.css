@@ -249,6 +249,10 @@
 		justify-content: center;
 		gap: 3rem;
 	}
+
+	.titre-projets-section{
+		display: none;
+	}
 }
 
 @media (orientation: landscape) and (max-height: 575.98px) and (hover: none) and (pointer: coarse) {
