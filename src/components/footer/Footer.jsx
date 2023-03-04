@@ -21,7 +21,7 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/mouhamadou-soumare/">
               <FaLinkedin />
             </a>
-            <a href="mail:mouhamadou-soumare@hotmail.com">
+            <a href="mailto:mouhamadou-soumare@hotmail.com" >
               <GrMail />
             </a>
           </div>

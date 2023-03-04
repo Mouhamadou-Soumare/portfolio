@@ -7,10 +7,15 @@ import Projets from "./components/projets/Projets";
 import Portfolio from "./components/portfolio/Portfolio";
 import Footer from "./components/footer/Footer";
 import Particle from "./components/particleBack/Particle";
+import {Helmet} from "react-helmet"
+
 
 const App = () => {
   return (
-    <div>
+   <div>
+      <Helmet>
+          <meta name="google-site-verification" content="RPJ10h6OebH_2mTxlSTfpRXtuJIYMkzIyHBvxSJ4afY" />
+      </Helmet>
       <Particle />
       {/* <Motion/>  */}
       <Header />

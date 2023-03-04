@@ -12,6 +12,7 @@ const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
   return (
     <nav>
+      {/* eslint-disable-next-line */}
       <a
         href="#"
         onClick={() => setActiveNav("#")}

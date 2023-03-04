@@ -35,6 +35,10 @@
 	transition: transform 200ms ease-in;
 }
 
+.lien-projet:hover{
+	color: var(--color-bg);
+}
+
 .titre-projet {
 	text-align: center;	
 }
