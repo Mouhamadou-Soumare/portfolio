@@ -100,7 +100,7 @@ const Projets = () => {
                 <div className="footer-card">
                   <div className="icons-lien flex">
                     <a
-                      class="lien-projet"
+                      className="lien-projet"
                       href="https://github.com/choeurtis18/AldiBnB"
                     >
                       <FaCode />
@@ -150,7 +150,7 @@ const Projets = () => {
                 <div className="footer-card">
                   <div className="icons-lien flex">
                     <a
-                      class="lien-projet"
+                      className="lien-projet"
                       href="https://github.com/choeurtis18/LeafUp-App-Front"
                     >
                      <FaCode />
@@ -201,7 +201,7 @@ const Projets = () => {
                 <div className="footer-card">
                   <div className="icons-lien flex">
                     <a
-                      class="lien-projet"
+                      className="lien-projet"
                       href="https://github.com/Mouhamadou-Soumare/JMI-Industries-Soumare-Gamo"
                     >
                       <FaCode />
