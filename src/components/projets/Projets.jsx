@@ -92,8 +92,7 @@ const Projets = () => {
                       AldiBnb, louez votre logement !
                     </h5>
                     <p className="mb-3 font-normal text-projet">
-                    Site d'annonces de location de biens immobilierrs réaliser en groupe.
-                     Il y'a 3 types d'utilisateurs, l'administrateur, le loueur et le propriétaire.
+                    Site d'annonces de location de biens immobiliers réalisé en groupe. Il y'a 3 types d'utilisateurs, l'administrateur, le loueur et le propriétaire.
                     </p>
                   </div>
                 </div>
@@ -141,9 +140,8 @@ const Projets = () => {
                       Leaf'Up, la serre connectée
                     </h5>
                     <p className="mb-3 font-normal text-projet">
-                    Projet d'équipe où l'on a eu pour idée la création d'un potager intelligent.
-                    On a joint à celle-ci un site faisant domotique avec la serre et regroupant la
-                    communauté de la main verte.
+                    Projet d'équipe où l'on a eu pour idée la création d'un potager intelligent. 
+                    On a joint à celle-ci un site faisant la domotique avec la serre et regroupant la communauté de la main verte.
                     </p>
                   </div>
                 </div>
@@ -191,10 +189,9 @@ const Projets = () => {
                       JMI Industries, un site de location de voiture
                     </h5>
                     <p className="mb-3 font-normal text-projet">
-                      Site réaliser sous symfony et en binome.
-                       L'utilisateur peut louer un véhicule, consulter son historique et gérer son compte.
-                       Les loueurs gérent leurs stocks et la disponibilité des véhicules.
-
+                    Site réalisé sous Symfony et en binôme.
+                  L'utilisateur peut louer un véhicule, consulter son historique et gérer son compte.
+                        Les loueurs gèrent leurs stocks et la disponibilité des véhicules.
                     </p>
                   </div>
                 </div>
