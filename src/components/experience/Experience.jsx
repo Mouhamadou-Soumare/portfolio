@@ -73,12 +73,7 @@ const Experience = () => {
               </div>
             </article>
 
-            <article className="experience__details">
-              <img src={mysql} alt="mysql" />
-              <div>
-                <h4>PhpMyAdmin</h4>
-              </div>
-            </article>
+          
             <article className="experience__details">
               <img src={symfony} alt="symfony" />
               <div>
@@ -121,6 +116,12 @@ const Experience = () => {
               <img src={prestashop} alt="prestashop" />
               <div>
                 <h4>Prestashop</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <img src={mysql} alt="mysql" />
+              <div>
+                <h4>PhpMyAdmin</h4>
               </div>
             </article>
           </div>

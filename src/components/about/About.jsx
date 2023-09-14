@@ -38,17 +38,16 @@ const About = () => {
             </article>
           </div>
           <p>
-            Tombé dans une marmite d'octets étant tout petit, je suis
-            aujourd'hui un passionné de l'informatique. Je m'appelle Mouhamadou,
-            né durant l'explosion de la bulle internet et de la high-tech, je me
-            suis formé dans le domaine informatique à Paris Descartes et à
-            Hetic. Avec 4 années d'expérience, en me plongeant sans cesse dans
-            ce vaste univers avec curiosité et soif d'apprendre, j'ai acquis les
-            compétences nécessaires pour réussir dans ce domaine. Mes
-            expériences professionnelles chez Escapade Française et Alliantech
-            m'ont permis d'acquérir une première approche du monde du travail,
-            ainsi que la capacité à endosser des responsabilités, travailler en
-            équipe et à travailler de manière autonome...
+          Tombé dans une marmite d'octets étant tout petit, je suis aujourd'hui 
+          un passionné de l'informatique. Je m'appelle Mouhamadou, né durant
+           l'explosion de la bulle internet et de la high-tech.
+            Je me suis formé dans le domaine informatique à Paris Descartes et à Hetic.
+             Avec 4 années d'expérience, en me plongeant sans cesse dans ce vaste univers
+              avec curiosité et soif d'apprendre, j'ai acquis les compétences nécessaires
+               pour réussir dans ce domaine. Mes expériences professionnelles 
+               chez Escapade Française et Alliantech m'ont permis d'acquérir une première 
+               approche du monde du travail, ainsi que la capacité à endosser 
+               des responsabilités, travailler en équipe et à travailler de manière autonome.
           </p>
 
           {/* <a href="#contact" className='btn btn-primary'>Parlons</a> */}

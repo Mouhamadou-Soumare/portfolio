@@ -17,6 +17,28 @@ const Portfolio = () => {
       <h5>Apprendre à me connaitre </h5>
       <h2>A propos de moi !</h2>
       <Timeline position="alternate">
+      <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: "auto 0" }}
+            variant="body2"
+            color="#1976d2"
+          >
+            2023 - 2025
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector />
+            <TimelineDot color="primary">
+              <MdSchool />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <Typography variant="h6" component="span">
+              Mastère CTO & Tech Lead
+            </Typography>
+            <Typography>EEMI - Paris, France </Typography>
+          </TimelineContent>
+        </TimelineItem>
         <TimelineItem>
           <TimelineOppositeContent
             sx={{ m: "auto 0" }}

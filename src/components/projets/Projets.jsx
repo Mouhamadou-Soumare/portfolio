@@ -8,9 +8,10 @@ import jmiweb from "../../assets/jmiweb.gif";
 import leafupWeb from "../../assets/leafupweb.gif";
 import AldiBnb from "../../assets/AldiBnb.gif";
 import AldiBnbWeb from "../../assets/AldiBnbWeb.gif";
-
-import { FaCode, FaPhp,FaHandPaper,FaSymfony,FaWordpress, FaReact } from "react-icons/fa";
-import {SiTypescript} from "react-icons/si";
+import chargeinWeb from "../../assets/chargeinweb.gif";
+import chargeinMobile from "../../assets/chargeinmobile.gif";
+import { FaCode, FaPhp,FaHandPaper,FaSymfony,FaWordpress, FaReact, FaGlobe } from "react-icons/fa";
+import {SiTypescript,SiRedux} from "react-icons/si";
 
 // import { RxLink2 } from "react-icons/rx";
 
@@ -60,19 +61,72 @@ const Projets = () => {
           dragConstraints={{ right: 0, left: -width }}
           className="inner-carrousel"
         >
-          
+          <motion.div className="item">
+            <div className="flex projects">
+              <div className="flex card-visuel">
+                <img
+                  src={chargeinMobile}
+                  className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgmobile"
+                  alt="img mobile projet charge-in"
+                />
+                <img
+                  src={chargeinWeb}
+                  className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgweb"
+                  alt=" web projet charge-in"
+                />
+              </div>
+
+              <div className="card-text">
+                <div className="icons flex">
+                  <div>
+                    <FaReact />
+                  </div>
+                  <div>
+                    <SiRedux />
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex flex-col justify-between p-4 leading-normal">
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight titre-projet">
+                      Charge-in
+                    </h5>
+                    <p className="mb-3 font-normal text-projet">
+                      Back-office Charge-In, comprenant un tableau de bord administrateur, un récapitulatif des statistiques...
+                    </p>
+                  </div>
+                </div>
+                <div className="footer-card">
+                  <div className="icons-lien flex">
+                    <a
+                      className="lien-projet"
+                      href="https://github.com/Mouhamadou-Soumare/charge-in-test"
+                    >
+                      <FaCode />
+                    </a>
+                    <a
+                      className="lien-projet"
+                      href="https://charge-in-test.vercel.app/"
+                    >
+                      <FaGlobe />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
           <motion.div className="item">
             <div className="flex projects">
               <div className="flex card-visuel">
                 <img
                   src={AldiBnb}
                   className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgmobile"
-                  alt=""
+                  alt=" mobile AldiBnb"
                 />
                 <img
                   src={AldiBnbWeb}
                   className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgweb"
-                  alt=""
+                  alt=" web AldiBnb"
                 />
               </div>
 
@@ -100,7 +154,7 @@ const Projets = () => {
                   <div className="icons-lien flex">
                     <a
                       className="lien-projet"
-                      href="https://github.com/choeurtis18/AldiBnB"
+                      href="https://github.com/Mouhamadou-Soumare/AldiBnB"
                     >
                       <FaCode />
                     </a>
@@ -115,12 +169,12 @@ const Projets = () => {
                 <img
                   src={leafup}
                   className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgmobile"
-                  alt=""
+                  alt=" mobile LeafUp"
                 />
                 <img
                   src={leafupWeb}
                   className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgweb"
-                  alt=""
+                  alt=" web LeafUp"
                 />
               </div>
 
@@ -149,10 +203,11 @@ const Projets = () => {
                   <div className="icons-lien flex">
                     <a
                       className="lien-projet"
-                      href="https://github.com/choeurtis18/LeafUp-App-Front"
+                      href="https://github.com/Mouhamadou-Soumare/LeafUp-App-Front"
                     >
                      <FaCode />
                     </a>
+                    
                   </div>
                 </div>
               </div>
@@ -164,12 +219,12 @@ const Projets = () => {
                 <img
                   src={jmi}
                   className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgmobile"
-                  alt=""
+                  alt=" mobile jmi"
                 />
                 <img
                   src={jmiweb}
                   className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgweb"
-                  alt=""
+                  alt=" web JMI"
                 />
               </div>
 
