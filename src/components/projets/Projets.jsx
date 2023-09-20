@@ -10,8 +10,12 @@ import AldiBnb from "../../assets/AldiBnb.gif";
 import AldiBnbWeb from "../../assets/AldiBnbWeb.gif";
 import chargeinWeb from "../../assets/chargeinweb.gif";
 import chargeinMobile from "../../assets/chargeinmobile.gif";
-import { FaCode, FaPhp,FaHandPaper,FaSymfony,FaWordpress, FaReact, FaGlobe } from "react-icons/fa";
+import salineWeb from "../../assets/SalineWeb.gif";
+import SalineMobile from "../../assets/SalineMobile.gif";
+import RapportSaline from "../../assets/SOUMARE_Mouhamadou_SPE2_P2023.pdf";
+import { FaCode, FaPhp,FaHandPaper,FaSymfony,FaWordpress, FaReact, FaGlobe,FaDocker } from "react-icons/fa";
 import {SiTypescript,SiRedux} from "react-icons/si";
+import {BsFillFileEarmarkPdfFill} from "react-icons/bs";
 
 // import { RxLink2 } from "react-icons/rx";
 
@@ -65,6 +69,63 @@ const Projets = () => {
             <div className="flex projects">
               <div className="flex card-visuel">
                 <img
+                  src={SalineMobile}
+                  className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgmobile"
+                  alt="img mobile projet Saline Royale"
+                />
+                <img
+                  src={salineWeb}
+                  className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgweb"
+                  alt=" web projet Saline Royale"
+                />
+              </div>
+
+              <div className="card-text">
+                <div className="icons flex">
+                  <div>
+                    <FaReact />
+                  </div>
+                  <div>
+                    <FaSymfony />
+                  </div>
+                  <div>
+                    <FaDocker />
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex flex-col justify-between p-4 leading-normal">
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight titre-projet">
+                      Saline Academy, du modèle média au modèle pédagogique
+                    </h5>
+                    <p className="mb-3 font-normal text-projet">
+                    Modernisation du site de la Saline Royale Academy en une plateforme de formation interactive avec gamification pour un meilleur engagement des apprenants.
+                    </p>
+                  </div>
+                </div>
+                <div className="footer-card">
+                  <div className="icons-lien flex">
+                    <a
+                      className="lien-projet"
+                      href="https://github.com/Mouhamadou-Soumare/Projet-Final-WEB3"
+                    >
+                      <FaCode />
+                    </a>
+                    <a
+                      className="lien-projet"
+                      href={RapportSaline}
+                    >
+                      <BsFillFileEarmarkPdfFill />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+          <motion.div className="item">
+            <div className="flex projects">
+              <div className="flex card-visuel">
+                <img
                   src={chargeinMobile}
                   className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgmobile"
                   alt="img mobile projet charge-in"
@@ -89,7 +150,7 @@ const Projets = () => {
                 <div>
                   <div className="flex flex-col justify-between p-4 leading-normal">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight titre-projet">
-                      Charge-in
+                      Charge-in, le  comparateur d'offres pour vos projets énergétiques
                     </h5>
                     <p className="mb-3 font-normal text-projet">
                       Back-office Charge-In, comprenant un tableau de bord administrateur, un récapitulatif des statistiques...
