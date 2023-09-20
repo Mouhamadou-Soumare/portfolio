@@ -108,12 +108,14 @@ const Projets = () => {
                     <a
                       className="lien-projet"
                       href="https://github.com/Mouhamadou-Soumare/Projet-Final-WEB3"
+                      target="_blank"
                     >
                       <FaCode />
                     </a>
                     <a
                       className="lien-projet"
                       href={RapportSaline}
+                      target="_blank"
                     >
                       <BsFillFileEarmarkPdfFill />
                     </a>
@@ -162,12 +164,14 @@ const Projets = () => {
                     <a
                       className="lien-projet"
                       href="https://github.com/Mouhamadou-Soumare/charge-in-test"
+                      target="_blank"
                     >
                       <FaCode />
                     </a>
                     <a
                       className="lien-projet"
                       href="https://charge-in-test.vercel.app/"
+                      target="_blank"
                     >
                       <FaGlobe />
                     </a>
@@ -216,6 +220,7 @@ const Projets = () => {
                     <a
                       className="lien-projet"
                       href="https://github.com/Mouhamadou-Soumare/AldiBnB"
+                      target="_blank"
                     >
                       <FaCode />
                     </a>
@@ -265,6 +270,7 @@ const Projets = () => {
                     <a
                       className="lien-projet"
                       href="https://github.com/Mouhamadou-Soumare/LeafUp-App-Front"
+                      target="_blank"
                     >
                      <FaCode />
                     </a>
@@ -316,6 +322,7 @@ const Projets = () => {
                     <a
                       className="lien-projet"
                       href="https://github.com/Mouhamadou-Soumare/JMI-Industries-Soumare-Gamo"
+                      target="_blank"
                     >
                       <FaCode />
                     </a>
