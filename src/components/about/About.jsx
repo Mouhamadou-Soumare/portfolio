@@ -38,11 +38,9 @@ const About = () => {
             </article>
           </div>
           <p>
-          Tombé dans le monde fascinant des octets dès ma petite enfance, je suis aujourd'hui un passionné inébranlable de l'informatique. Je me nomme Mouhamadou, ayant vu le jour au cours de l'explosion de la bulle Internet et de la révolution high-tech.
-
-Mon parcours de formation s'est déployé entre les bancs de Paris Descartes et d'Hetic, et actuellement, l'aventure se poursuit avec détermination à l'EEMI, où je me consacre à mon mastère application & cybersecurity pour atteindre les sommets.
-<br />
-Fort de quatre années d'expérience, mon immersion constante dans cet univers infini, animée par la curiosité et une soif inextinguible d'apprendre, m'a permis d'acquérir les compétences essentielles pour exceller dans le domaine de l'informatique. Mes périples professionnels chez Escapade Française et Alliantech ont constitué autant de passerelles vers le monde du travail, me dotant ainsi d'une première expérience pratique. Ces expériences m'ont également conféré la capacité à assumer des responsabilités, à collaborer efficacement en équipe, et à travailler de manière autonome.
+          Plongé dans l'océan mystique des octets dès ma plus tendre enfance, je suis aujourd'hui un enthousiaste inébranlable, naviguant passionnément à travers les méandres de l'informatique. Mon nom est Mouhamadou, né au cœur de l'ère de l'éclosion d'Internet et de la révolution high-tech. Mon voyage éducatif m'a guidé des salles de classe de Paris Descartes à celles d'Hetic, et aujourd'hui, ma quête continue de manière résolue à l'EEMI, où je me dévoue à mon mastère en application & cybersécurité, cherchant à toucher les étoiles.
+<br/>
+Fort de quatre années d'expérience, mon immersion constante dans ce monde infini, alimentée par une curiosité insatiable et une soif inextinguible de connaissance, m'a façonné en un professionnel doté des compétences essentielles pour briller dans le royaume de l'informatique. Mes aventures professionnelles chez Escapade Française et Alliantech ont été autant de portes d'entrée vers l'univers du travail, m'offrant une première expérience pratique. Ces périples m'ont également conféré la capacité d'endosser des responsabilités, de collaborer harmonieusement au sein d'une équipe, et de travailler de manière autonome. Mon histoire ne fait que commencer, et je suis prêt à écrire les chapitres à venir avec passion et détermination.
           </p>
 
           {/* <a href="#contact" className='btn btn-primary'>Parlons</a> */}
