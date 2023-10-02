@@ -38,16 +38,11 @@ const About = () => {
             </article>
           </div>
           <p>
-          Tombé dans une marmite d'octets étant tout petit, je suis aujourd'hui 
-          un passionné de l'informatique. Je m'appelle Mouhamadou, né durant
-           l'explosion de la bulle internet et de la high-tech.
-            Je me suis formé dans le domaine informatique à Paris Descartes et à Hetic.
-             Avec 4 années d'expérience, en me plongeant sans cesse dans ce vaste univers
-              avec curiosité et soif d'apprendre, j'ai acquis les compétences nécessaires
-               pour réussir dans ce domaine. Mes expériences professionnelles 
-               chez Escapade Française et Alliantech m'ont permis d'acquérir une première 
-               approche du monde du travail, ainsi que la capacité à endosser 
-               des responsabilités, travailler en équipe et à travailler de manière autonome.
+          Tombé dans le monde fascinant des octets dès ma petite enfance, je suis aujourd'hui un passionné inébranlable de l'informatique. Je me nomme Mouhamadou, ayant vu le jour au cours de l'explosion de la bulle Internet et de la révolution high-tech.
+
+Mon parcours de formation s'est déployé entre les bancs de Paris Descartes et d'Hetic, et actuellement, l'aventure se poursuit avec détermination à l'EEMI, où je me consacre à mon mastère application & cybersecurity pour atteindre les sommets.
+<br />
+Fort de quatre années d'expérience, mon immersion constante dans cet univers infini, animée par la curiosité et une soif inextinguible d'apprendre, m'a permis d'acquérir les compétences essentielles pour exceller dans le domaine de l'informatique. Mes périples professionnels chez Escapade Française et Alliantech ont constitué autant de passerelles vers le monde du travail, me dotant ainsi d'une première expérience pratique. Ces expériences m'ont également conféré la capacité à assumer des responsabilités, à collaborer efficacement en équipe, et à travailler de manière autonome.
           </p>
 
           {/* <a href="#contact" className='btn btn-primary'>Parlons</a> */}

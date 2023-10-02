@@ -34,7 +34,7 @@ const Portfolio = () => {
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
-              Mastère CTO & Tech Lead
+            Mastère application & cybersecurity
             </Typography>
             <Typography>EEMI - Paris, France </Typography>
           </TimelineContent>
