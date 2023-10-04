@@ -13,7 +13,7 @@ import chargeinMobile from "../../assets/chargeinmobile.gif";
 import salineWeb from "../../assets/SalineWeb.gif";
 import SalineMobile from "../../assets/SalineMobile.gif";
 import RapportSaline from "../../assets/SOUMARE_Mouhamadou_SPE2_P2023.pdf";
-import { FaCode, FaPhp,FaHandPaper,FaSymfony,FaWordpress, FaReact, FaGlobe,FaDocker } from "react-icons/fa";
+import { FaCode, FaPhp,FaHandPaper,FaSymfony,FaWordpress, FaReact, FaGlobe,FaDocker,FaPython} from "react-icons/fa";
 import {SiTypescript,SiRedux} from "react-icons/si";
 import {BsFillFileEarmarkPdfFill} from "react-icons/bs";
 
@@ -256,6 +256,9 @@ const Projets = () => {
                   </div>
                   <div>
                     <SiTypescript />
+                  </div>
+                  <div>
+                    <FaPython />
                   </div>
                 </div>
 
