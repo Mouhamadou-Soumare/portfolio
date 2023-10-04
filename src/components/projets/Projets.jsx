@@ -109,6 +109,7 @@ const Projets = () => {
                       className="lien-projet"
                       href="https://github.com/Mouhamadou-Soumare/Projet-Final-WEB3"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <FaCode />
                     </a>
@@ -116,6 +117,7 @@ const Projets = () => {
                       className="lien-projet"
                       href={RapportSaline}
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <BsFillFileEarmarkPdfFill />
                     </a>
@@ -165,6 +167,7 @@ const Projets = () => {
                       className="lien-projet"
                       href="https://github.com/Mouhamadou-Soumare/charge-in-test"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <FaCode />
                     </a>
@@ -172,6 +175,7 @@ const Projets = () => {
                       className="lien-projet"
                       href="https://charge-in-test.vercel.app/"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <FaGlobe />
                     </a>
@@ -221,6 +225,7 @@ const Projets = () => {
                       className="lien-projet"
                       href="https://github.com/Mouhamadou-Soumare/AldiBnB"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <FaCode />
                     </a>
@@ -271,6 +276,7 @@ const Projets = () => {
                       className="lien-projet"
                       href="https://github.com/Mouhamadou-Soumare/LeafUp-App-Front"
                       target="_blank"
+                      rel="noreferrer"
                     >
                      <FaCode />
                     </a>
@@ -323,6 +329,7 @@ const Projets = () => {
                       className="lien-projet"
                       href="https://github.com/Mouhamadou-Soumare/JMI-Industries-Soumare-Gamo"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <FaCode />
                     </a>

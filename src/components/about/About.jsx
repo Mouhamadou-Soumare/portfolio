@@ -39,7 +39,7 @@ const About = () => {
           </div>
           <p>
           Plongé dans l'océan mystique des octets dès ma plus tendre enfance, je suis aujourd'hui un enthousiaste inébranlable, naviguant passionnément à travers les méandres de l'informatique. Mon nom est Mouhamadou, né au cœur de l'ère de l'éclosion d'Internet et de la révolution high-tech. Mon voyage éducatif m'a guidé des salles de classe de Paris Descartes à celles d'Hetic, et aujourd'hui, ma quête continue de manière résolue à l'EEMI, où je me dévoue à mon mastère en application & cybersécurité, cherchant à toucher les étoiles.
-<br/>
+<br/> 
 Fort de quatre années d'expérience, mon immersion constante dans ce monde infini, alimentée par une curiosité insatiable et une soif inextinguible de connaissance, m'a façonné en un professionnel doté des compétences essentielles pour briller dans le royaume de l'informatique. Mes aventures professionnelles chez Escapade Française et Alliantech ont été autant de portes d'entrée vers l'univers du travail, m'offrant une première expérience pratique. Ces périples m'ont également conféré la capacité d'endosser des responsabilités, de collaborer harmonieusement au sein d'une équipe, et de travailler de manière autonome. Mon histoire ne fait que commencer, et je suis prêt à écrire les chapitres à venir avec passion et détermination.
           </p>
 
