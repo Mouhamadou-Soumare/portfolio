@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import { useState, useRef, useEffect } from "react";
 import "./projets.css";
 import jmi from "../../assets/mobile.gif";
 import leafup from "../../assets/LeafUp11.gif";
@@ -23,10 +22,86 @@ const Projets = () => {
   const [width, setWidth] = useState(0);
   const carrousel = useRef();
 
+  
+  const projects = [
+    {
+      title: "Saline Academy, du modèle média au modèle pédagogique",
+      description: "Modernisation du site de la Saline Royale Academy en une plateforme de formation interactive avec gamification pour un meilleur engagement des apprenants.",
+      icons: [<FaReact />, <FaSymfony />, <FaDocker />],
+      images: [SalineMobile, salineWeb],
+      links: [
+        {
+          icon: <FaCode />,
+          url: "https://github.com/Mouhamadou-Soumare/Projet-Final-WEB3",
+        },
+        {
+          icon: <BsFillFileEarmarkPdfFill />,
+          url: RapportSaline,
+        },
+      ],
+    },
+    {
+      title: "Charge-in, le comparateur d'offres pour vos projets énergétiques",
+      description: "Back-office Charge-In, comprenant un tableau de bord administrateur, un récapitulatif des statistiques...",
+      icons: [<FaReact />, <SiRedux />],
+      images: [chargeinMobile, chargeinWeb],
+      links: [
+        {
+          icon: <FaCode />,
+          url: "https://github.com/Mouhamadou-Soumare/charge-in-test",
+        },
+        {
+          icon: <FaGlobe />,
+          url: "https://charge-in-test.vercel.app/",
+        },
+      ],
+    },
+    {
+      title: "AldiBnb, louez votre logement !",
+      description: "Site d'annonces de location de biens immobiliers réalisé en groupe. Il y'a 3 types d'utilisateurs, l'administrateur, le loueur et le propriétaire.",
+      icons: [<FaWordpress />, <FaPhp />],
+      images: [AldiBnb, AldiBnbWeb],
+      links: [
+        {
+          icon: <FaCode />,
+          url: "https://github.com/Mouhamadou-Soumare/AldiBnB",
+        },
+      ],
+    },
+    {
+      title: "Leaf'Up, la serre connectée",
+      description: "Projet d'équipe où l'on a eu pour idée la création d'un potager intelligent. On a joint à celle-ci un site faisant la domotique avec la serre et regroupant la communauté de la main verte.",
+      icons: [<FaReact />, <SiTypescript />, <FaPython />],
+      images: [leafup, leafupWeb],
+      links: [
+        {
+          icon: <FaCode />,
+          url: "https://github.com/Mouhamadou-Soumare/LeafUp-App-Front",
+        },
+      ],
+    },
+    {
+      title: "JMI Industries, un site de location de voiture",
+      description: "Site réalisé sous Symfony et en binôme. L'utilisateur peut louer un véhicule, consulter son historique et gérer son compte. Les loueurs gèrent leurs stocks et la disponibilité des véhicules.",
+      icons: [<FaSymfony />, <FaPhp />],
+      images: [jmi, jmiweb],
+      links: [
+        {
+          icon: <FaCode />,
+          url: "https://github.com/Mouhamadou-Soumare/JMI-Industries-Soumare-Gamo",
+        },
+      ],
+    },
+  ];
+  
+
   useEffect(() => {
     console.log(carrousel);
     setWidth(carrousel.current.scrollWidth - carrousel.current.offsetWidth);
   }, []);
+
+
+
   return (
     <section id="projets">
       <div className="titre-projets-section">
@@ -65,282 +140,59 @@ const Projets = () => {
           dragConstraints={{ right: 0, left: -width }}
           className="inner-carrousel"
         >
-          <motion.div className="item">
-            <div className="flex projects">
-              <div className="flex card-visuel">
+          {projects.map((project, index) => (
+          <motion.div className="item" key={index}>
+            <div className="flex projects" >
+               <div className="flex card-visuel">
                 <img
-                  src={SalineMobile}
+                  src={project.images[0]}
                   className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgmobile"
-                  alt="img mobile projet Saline Royale"
+                  alt="img mobile "
                 />
                 <img
-                  src={salineWeb}
+                  src={project.images[1]}
                   className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgweb"
-                  alt=" web projet Saline Royale"
+                  alt=" web projet "
                 />
               </div>
 
               <div className="card-text">
                 <div className="icons flex">
-                  <div>
-                    <FaReact />
-                  </div>
-                  <div>
-                    <FaSymfony />
-                  </div>
-                  <div>
-                    <FaDocker />
-                  </div>
+                {project.icons.map((icon, iconIndex) => (
+                   <div key={iconIndex}>{icon}</div>
+                  ))}
                 </div>
 
                 <div>
                   <div className="flex flex-col justify-between p-4 leading-normal">
                     <h5 className="mb-2 text-2xl font-bold tracking-tight titre-projet">
-                      Saline Academy, du modèle média au modèle pédagogique
+                      {project.title}
                     </h5>
                     <p className="mb-3 font-normal text-projet">
-                    Modernisation du site de la Saline Royale Academy en une plateforme de formation interactive avec gamification pour un meilleur engagement des apprenants.
+                      {project.description}
                     </p>
                   </div>
                 </div>
                 <div className="footer-card">
                   <div className="icons-lien flex">
-                    <a
-                      className="lien-projet"
-                      href="https://github.com/Mouhamadou-Soumare/Projet-Final-WEB3"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaCode />
-                    </a>
-                    <a
-                      className="lien-projet"
-                      href={RapportSaline}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <BsFillFileEarmarkPdfFill />
-                    </a>
+                  {project.links.map((link, linkIndex) => (
+            <a
+              key={linkIndex}
+              className="lien-projet"
+              href={link.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {link.icon}
+            </a>
+          ))}
                   </div>
                 </div>
               </div>
             </div>
           </motion.div>
-          <motion.div className="item">
-            <div className="flex projects">
-              <div className="flex card-visuel">
-                <img
-                  src={chargeinMobile}
-                  className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgmobile"
-                  alt="img mobile projet charge-in"
-                />
-                <img
-                  src={chargeinWeb}
-                  className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgweb"
-                  alt=" web projet charge-in"
-                />
-              </div>
-
-              <div className="card-text">
-                <div className="icons flex">
-                  <div>
-                    <FaReact />
-                  </div>
-                  <div>
-                    <SiRedux />
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex flex-col justify-between p-4 leading-normal">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight titre-projet">
-                      Charge-in, le  comparateur d'offres pour vos projets énergétiques
-                    </h5>
-                    <p className="mb-3 font-normal text-projet">
-                      Back-office Charge-In, comprenant un tableau de bord administrateur, un récapitulatif des statistiques...
-                    </p>
-                  </div>
-                </div>
-                <div className="footer-card">
-                  <div className="icons-lien flex">
-                    <a
-                      className="lien-projet"
-                      href="https://github.com/Mouhamadou-Soumare/charge-in-test"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaCode />
-                    </a>
-                    <a
-                      className="lien-projet"
-                      href="https://charge-in-test.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaGlobe />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-          <motion.div className="item">
-            <div className="flex projects">
-              <div className="flex card-visuel">
-                <img
-                  src={AldiBnb}
-                  className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgmobile"
-                  alt=" mobile AldiBnb"
-                />
-                <img
-                  src={AldiBnbWeb}
-                  className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgweb"
-                  alt=" web AldiBnb"
-                />
-              </div>
-
-              <div className="card-text">
-                <div className="icons flex">
-                  <div>
-                    <FaWordpress />
-                  </div>
-                  <div>
-                    <FaPhp />
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex flex-col justify-between p-4 leading-normal">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight titre-projet">
-                      AldiBnb, louez votre logement !
-                    </h5>
-                    <p className="mb-3 font-normal text-projet">
-                    Site d'annonces de location de biens immobiliers réalisé en groupe. Il y'a 3 types d'utilisateurs, l'administrateur, le loueur et le propriétaire.
-                    </p>
-                  </div>
-                </div>
-                <div className="footer-card">
-                  <div className="icons-lien flex">
-                    <a
-                      className="lien-projet"
-                      href="https://github.com/Mouhamadou-Soumare/AldiBnB"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaCode />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-          <motion.div className="item">
-            <div className="flex projects">
-              <div className="flex card-visuel">
-                <img
-                  src={leafup}
-                  className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgmobile"
-                  alt=" mobile LeafUp"
-                />
-                <img
-                  src={leafupWeb}
-                  className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgweb"
-                  alt=" web LeafUp"
-                />
-              </div>
-
-              <div className="card-text">
-                <div className="icons flex">
-                  <div>
-                    <FaReact />
-                  </div>
-                  <div>
-                    <SiTypescript />
-                  </div>
-                  <div>
-                    <FaPython />
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex flex-col justify-between p-4 leading-normal">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight titre-projet">
-                      Leaf'Up, la serre connectée
-                    </h5>
-                    <p className="mb-3 font-normal text-projet">
-                    Projet d'équipe où l'on a eu pour idée la création d'un potager intelligent. 
-                    On a joint à celle-ci un site faisant la domotique avec la serre et regroupant la communauté de la main verte.
-                    </p>
-                  </div>
-                </div>
-                <div className="footer-card">
-                  <div className="icons-lien flex">
-                    <a
-                      className="lien-projet"
-                      href="https://github.com/Mouhamadou-Soumare/LeafUp-App-Front"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                     <FaCode />
-                    </a>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-          <motion.div className="item">
-            <div className="flex projects">
-              <div className="flex card-visuel">
-                <img
-                  src={jmi}
-                  className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgmobile"
-                  alt=" mobile jmi"
-                />
-                <img
-                  src={jmiweb}
-                  className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgweb"
-                  alt=" web JMI"
-                />
-              </div>
-
-              <div className="card-text">
-                <div className="icons flex">
-                  <div>
-                    <FaSymfony />
-                  </div>
-                  <div>
-                    <FaPhp  />
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex flex-col justify-between p-4 leading-normal">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight titre-projet">
-                      JMI Industries, un site de location de voiture
-                    </h5>
-                    <p className="mb-3 font-normal text-projet">
-                    Site réalisé sous Symfony et en binôme.
-                  L'utilisateur peut louer un véhicule, consulter son historique et gérer son compte.
-                        Les loueurs gèrent leurs stocks et la disponibilité des véhicules.
-                    </p>
-                  </div>
-                </div>
-                <div className="footer-card">
-                  <div className="icons-lien flex">
-                    <a
-                      className="lien-projet"
-                      href="https://github.com/Mouhamadou-Soumare/JMI-Industries-Soumare-Gamo"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaCode />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
+           ))}
+         
           <motion.div className="item">
             <div className="flex projects">
             <div className="flex card-visuel">
@@ -366,7 +218,7 @@ const Projets = () => {
           </motion.div>
         </motion.div>
       </motion.div>
-      
+     
       <div className="curtain curtain-right">
         <div className="curtain-element"></div>
         <div className="curtain-element"> 
@@ -379,6 +231,8 @@ const Projets = () => {
         <div className="curtain-element"></div>
         <div className="curtain-element"></div>
       </div>
+
+     
     </section>
   );
 };
