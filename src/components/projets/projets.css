@@ -22,6 +22,7 @@
 	place-items: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	border-radius: 0 0 20px 20px;
 }
 
 .lien-projet {
@@ -103,6 +104,7 @@
 	align-items: center;
 	padding-top: 10px;
 	justify-content: center;
+	border-radius: 20px 20px 0 0;
 }
 
 
@@ -118,13 +120,35 @@
 }
 
 .carrousel {
-	flex-basis: 200vw;
+	flex-basis: 165vw;
 	cursor: grab;
 	width: fit-content;
 	margin: auto;
 	overflow: hidden;
 }
 
+.carrousel .slick-track{
+	display: flex;
+}
+
+
+.slick-arrow{
+	display: none !important;
+}
+
+.slick-dots{
+	display: flex !important;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+
+.slick-dots .slick-active{
+	background-color: var(--color-light);
+	border-radius: 100%;
+	padding: 5px;
+}
 
 .curtain {
 	width: 50%;
@@ -212,7 +236,8 @@
 	.carrousel {
 		cursor: none !important;
 		flex-basis: initial;
-		margin: 15%;
+		margin: 5%;
+		display: block;
 	}
 
 
@@ -226,9 +251,10 @@
 
 	.imgmobile {
 		width: auto;
-		height: 500px;
+		height: 270px;
 		max-width: none !important;
 		margin: 1rem auto;
+
 	}
 
 	.text-projet {
@@ -237,6 +263,7 @@
 
 	.card-visuel {
 		justify-content: center;
+		border-radius: none;
 	}
 
 	#projets {
@@ -255,10 +282,14 @@
 	.titre-projets-section{
 		display: none;
 	}
+
+	.card-text{
+		height: 350px;
+		border-radius: none;
+	}
 }
 
 @media (orientation: landscape) and (max-height: 575.98px) and (hover: none) and (pointer: coarse) {
-	/* your CSS to target only landscape mobile users   */
 
 	.curtain-left,
 	.curtain-right {

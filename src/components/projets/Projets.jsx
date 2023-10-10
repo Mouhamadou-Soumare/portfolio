@@ -1,6 +1,8 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState  } from "react";
 import { motion } from "framer-motion";
+import Slider from "react-slick";
 import "./projets.css";
+
 import jmi from "../../assets/mobile.gif";
 import leafup from "../../assets/LeafUp11.gif";
 import jmiweb from "../../assets/jmiweb.gif";
@@ -19,10 +21,21 @@ import {BsFillFileEarmarkPdfFill} from "react-icons/bs";
 // import { RxLink2 } from "react-icons/rx";
 
 const Projets = () => {
-  const [width, setWidth] = useState(0);
   const carrousel = useRef();
 
-  
+  const [maxHeight, setMaxHeight] = useState(0); // Initialize maxHeight state
+
+  // Calculate and update the maximum height among items
+  useEffect(() => {
+    const itemElements = document.querySelectorAll(".item");
+    let maxItemHeight = 0;
+    itemElements.forEach((item) => {
+      const itemHeight = item.clientHeight;
+      maxItemHeight = Math.max(maxItemHeight, itemHeight);
+    });
+    setMaxHeight(maxItemHeight);
+  }, []);
+
   const projects = [
     {
       title: "Saline Academy, du modèle média au modèle pédagogique",
@@ -93,20 +106,32 @@ const Projets = () => {
       ],
     },
   ];
-  
 
-  useEffect(() => {
-    console.log(carrousel);
-    setWidth(carrousel.current.scrollWidth - carrousel.current.offsetWidth);
-  }, []);
+  const settings = {
+    dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  variableWidth: false,
+  centerMode: true,
+  focusOnSelect: true,
+  draggable: true,
+  autoplay: true,          // Enable automatic scrolling
+  autoplaySpeed: 3000, 
+  
+  };
+
+  
 
 
 
   return (
     <section id="projets">
       <div className="titre-projets-section">
-        <h5>Slide à droite </h5>
-        <h2><FaHandPaper/></h2>
+      <h2><FaHandPaper/></h2>
+        <h5>Maintenez le bouton gauche de la souris enfoncé et faites glisser le slider  </h5>
+      
       </div>
       
       <div className="curtain curtain-left">
@@ -130,19 +155,11 @@ const Projets = () => {
         <div className="curtain-element"></div>
       </div>
       
-      <motion.div
-        ref={carrousel}
-        whileTap={{ cursor: "grabbing" }}
-        className="carrousel"
-      >
-        <motion.div
-          drag="x"
-          dragConstraints={{ right: 0, left: -width }}
-          className="inner-carrousel"
-        >
+      <Slider ref={carrousel} {...settings} className="carrousel">
+
           {projects.map((project, index) => (
-          <motion.div className="item" key={index}>
-            <div className="flex projects" >
+      <motion.div className={'item'} key={index} style={{ height: `${maxHeight}px` }}>
+        <div className="flex projects" >
                <div className="flex card-visuel">
                 <img
                   src={project.images[0]}
@@ -193,31 +210,8 @@ const Projets = () => {
           </motion.div>
            ))}
          
-          <motion.div className="item">
-            <div className="flex projects">
-            <div className="flex card-visuel">
-                <img
-                  src={leafup}
-                  className="card-body-img object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg imgmobile"
-                  alt=""
-                />
-              </div>
-
-              <div className="card-text">
-        
-
-                <div>
-                  <div className="flex flex-col justify-between p-4 leading-normal">
-                  </div>
-                </div>
-                <div className="footer-card">
-                 
-                </div>
-              </div>
-            </div>
-          </motion.div>
-        </motion.div>
-      </motion.div>
+  
+      </Slider>
      
       <div className="curtain curtain-right">
         <div className="curtain-element"></div>
