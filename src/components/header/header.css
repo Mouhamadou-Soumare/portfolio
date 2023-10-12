@@ -43,10 +43,10 @@ header {
 
 .me {
 	background: linear-gradient(var(--color-primary), transparent);
-	width: 22rem;
+	width: 30rem;
 	height: 30rem;
 	position: absolute;
-	left: calc(50% - 11rem);
+	left: calc(50% - 15rem);
 	margin-top: 3.5rem;
 	border-radius: 12rem 12rem 0 0;
 	overflow: hidden;
