@@ -108,10 +108,10 @@
 }
 
 
-.item {
+/* .item {
 	margin-right: 20px;
 	max-width: 50rem;
-}
+} */
 
 .inner-carrousel {
 	display: flex;
@@ -125,6 +125,7 @@
 	width: fit-content;
 	margin: auto;
 	overflow: hidden;
+	padding-top: 4rem;
 }
 
 .carrousel .slick-track{
@@ -132,9 +133,14 @@
 }
 
 
+.slick-slide{
+	margin-right: 20px;
+}
+
 .slick-arrow{
 	display: none !important;
 }
+
 
 .slick-dots{
 	display: flex !important;
@@ -226,6 +232,32 @@
 .curtain-right .curtain-element:nth-child(odd) {
 	background-color: var(--color-bg-variant);
 }
+
+@media only screen and (max-width: 1200px) and (min-width: 900px)  {
+
+	.imgmobile{
+		display: none !important;
+	}
+
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+	.imgweb {
+	  display:none;
+	}
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 760px) {
+	.imgmobile{
+		max-width: 190px !important;
+		margin: 0 auto;
+	}
+
+	.card-visuel{
+		justify-content: unset;
+	}
+  }
 
 @media screen and (max-width: 600px) {
 

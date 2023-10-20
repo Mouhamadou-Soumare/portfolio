@@ -6613,6 +6613,11 @@
   dependencies:
     "language-subtag-registry" "~0.3.2"
 
+"lato-font@^3.0.0":
+  "integrity" "sha512-wKhFCh9XX91Lepf38ynnZTNpkQD1OWuXV1RwFgcchUVQZzBixJ/yXCaVCIrNI3CbgT9pLcLzWKgn+6OETzAnug=="
+  "resolved" "https://registry.npmjs.org/lato-font/-/lato-font-3.0.0.tgz"
+  "version" "3.0.0"
+
 "leven@^3.1.0":
   "integrity" "sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A=="
   "resolved" "https://registry.npmjs.org/leven/-/leven-3.1.0.tgz"

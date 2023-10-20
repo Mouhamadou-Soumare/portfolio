@@ -38,8 +38,8 @@ const Projets = () => {
 
   const projects = [
     {
-      title: "Saline Academy, du modèle média au modèle pédagogique",
-      description: "Modernisation du site de la Saline Royale Academy en une plateforme de formation interactive avec gamification pour un meilleur engagement des apprenants.",
+      title: "Saline Academy : passage au modèle pédagogique",
+      description: "Transformation du site de la Saline Royale Academy en une plateforme de formation interactive avec gamification pour améliorer l'engagement des apprenants",
       icons: [<FaReact />, <FaSymfony />, <FaDocker />],
       images: [SalineMobile, salineWeb],
       links: [
@@ -54,8 +54,8 @@ const Projets = () => {
       ],
     },
     {
-      title: "Charge-in, le comparateur d'offres pour vos projets énergétiques",
-      description: "Back-office Charge-In, comprenant un tableau de bord administrateur, un récapitulatif des statistiques...",
+      title: "Charge-in : comparateur d'offres énergétiques",
+      description: "Mise en place du back-office Charge-In, comprenant un tableau de bord administrateur, un récapitulatif des statistiques, et une page de configuration du profil",
       icons: [<FaReact />, <SiRedux />],
       images: [chargeinMobile, chargeinWeb],
       links: [
@@ -70,8 +70,8 @@ const Projets = () => {
       ],
     },
     {
-      title: "AldiBnb, louez votre logement !",
-      description: "Site d'annonces de location de biens immobiliers réalisé en groupe. Il y'a 3 types d'utilisateurs, l'administrateur, le loueur et le propriétaire.",
+      title: "AldiBnb : location de logements",
+      description: "Développement d'un site d'annonces de location de biens immobiliers en collaboration. Il comprend trois types d'utilisateurs : administrateur, loueur et propriétaire",
       icons: [<FaWordpress />, <FaPhp />],
       images: [AldiBnb, AldiBnbWeb],
       links: [
@@ -82,8 +82,8 @@ const Projets = () => {
       ],
     },
     {
-      title: "Leaf'Up, la serre connectée",
-      description: "Projet d'équipe où l'on a eu pour idée la création d'un potager intelligent. On a joint à celle-ci un site faisant la domotique avec la serre et regroupant la communauté de la main verte.",
+      title: "Leaf'Up : serre connectée",
+      description: "Conception d'un projet d'équipe axé sur la création d'un potager intelligent, complété par une interface de domotique pour la serre et une communauté d'amateurs de jardinage",
       icons: [<FaReact />, <SiTypescript />, <FaPython />],
       images: [leafup, leafupWeb],
       links: [
@@ -94,8 +94,8 @@ const Projets = () => {
       ],
     },
     {
-      title: "JMI Industries, un site de location de voiture",
-      description: "Site réalisé sous Symfony et en binôme. L'utilisateur peut louer un véhicule, consulter son historique et gérer son compte. Les loueurs gèrent leurs stocks et la disponibilité des véhicules.",
+      title: "JMI Industries : location de voitures",
+      description: "Création d'un site sous Symfony en collaboration. Les utilisateurs peuvent louer des véhicules, consulter leur historique et gérer leur compte. Les loueurs gèrent les stocks et la disponibilité des véhicules",
       icons: [<FaSymfony />, <FaPhp />],
       images: [jmi, jmiweb],
       links: [
@@ -117,7 +117,7 @@ const Projets = () => {
   centerMode: true,
   focusOnSelect: true,
   draggable: true,
-  autoplay: true,          // Enable automatic scrolling
+  autoplay: false,          
   autoplaySpeed: 3000, 
   
   };

@@ -14,6 +14,7 @@ import docker from "../../assets/icons/docker.svg";
 import figma from "../../assets/icons/figma.svg";
 import wordpress from "../../assets/icons/wordrpess.svg";
 import prestashop from "../../assets/icons/Prestashop.svg";
+import java from "../../assets/icons/java.svg";
 
 const Experience = () => {
   return (
@@ -85,6 +86,12 @@ const Experience = () => {
               <img src={cplusplus} alt="c++" />
               <div>
                 <h4>C++</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <img src={java} alt="java" />
+              <div>
+                <h4>Java</h4>
               </div>
             </article>
           </div>

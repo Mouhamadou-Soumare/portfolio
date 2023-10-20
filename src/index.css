@@ -54,7 +54,7 @@ body.light {
 }
 
 body {
-	font-family: "Poppins", sans-serif;
+	font-family: "Lato", sans-serif;
 	background: var(--color-bg);
 	color: var(--color-white);
 	line-height: 1.7;
@@ -179,6 +179,15 @@ img {
 
 	section {
 		margin-top: 6rem;
+	}
+}
+
+@media screen and (max-width:1024px) and (min-width:600px) {
+	#about {
+		height: 150vh;
+	}
+	section{
+		height: 11 0vh;
 	}
 }
 
