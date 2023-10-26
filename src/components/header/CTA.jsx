@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../../assets/CV_Alternance_Soumare_WEB.pdf";
+import CV from "../../assets/CV_Soumare _Developpeur _Web.pdf";
 
 const CTA = () => {
   return (
