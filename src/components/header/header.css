@@ -1,5 +1,5 @@
 header {
-	height: 100vh;
+	height: auto;
 	padding-top: 3rem;
 	overflow: hidden;
 }
@@ -11,6 +11,10 @@ header {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .cta {
