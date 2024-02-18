@@ -22,6 +22,10 @@
 	top: 30px !important;
 }
 
+.portfolio {
+	margin-bottom: 10rem;
+}
+
 @media screen and (max-width: 600px) {
 
 	.portfolio {

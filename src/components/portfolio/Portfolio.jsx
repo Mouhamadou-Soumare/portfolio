@@ -45,7 +45,7 @@ const Portfolio = () => {
             variant="body2"
             color="#1976d2"
           >
-            2021 - 2023
+            2021 - 2024
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />

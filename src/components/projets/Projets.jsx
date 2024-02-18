@@ -13,8 +13,12 @@ import chargeinWeb from "../../assets/chargeinweb.gif";
 import chargeinMobile from "../../assets/chargeinmobile.gif";
 import salineWeb from "../../assets/SalineWeb.gif";
 import SalineMobile from "../../assets/SalineMobile.gif";
+import mangiWeb from "../../assets/mangi_desktop.gif";
+import mangiMobile from "../../assets/mangi_mobile.gif";
+
+
 import RapportSaline from "../../assets/SOUMARE_Mouhamadou_SPE2_P2023.pdf";
-import { FaCode, FaPhp,FaHandPaper,FaSymfony,FaWordpress, FaReact, FaGlobe,FaDocker,FaPython} from "react-icons/fa";
+import { FaCode, FaPhp,FaHandPaper,FaSymfony,FaWordpress, FaReact, FaGlobe,FaDocker,FaPython, FaNodeJs} from "react-icons/fa";
 import {SiTypescript,SiRedux} from "react-icons/si";
 import {BsFillFileEarmarkPdfFill} from "react-icons/bs";
 
@@ -37,6 +41,22 @@ const Projets = () => {
   }, []);
 
   const projects = [
+    {
+      title: "Manĝi : Votre Réalité Augmentée Alimentaire",
+      description: "Workshop, création d'un site pour une solution AR. Découvrez une nouvelle façon de connaître vos produits alimentaires avec Manĝi, notre solution révolutionnaire de réalité augmentée.      ",
+      icons: [<FaReact />, <FaNodeJs />],
+      images: [mangiMobile, mangiWeb],
+      links: [
+        {
+          icon: <FaCode />,
+          url: "https://github.com/Mouhamadou-Soumare/mangi_ar_app",
+        },
+        {
+          icon: <FaGlobe />,
+          url: "https://mangi-client.vercel.app/",
+        },
+      ],
+    },
     {
       title: "Saline Academy : passage au modèle pédagogique",
       description: "Transformation du site de la Saline Royale Academy en une plateforme de formation interactive avec gamification pour améliorer l'engagement des apprenants",
@@ -95,7 +115,7 @@ const Projets = () => {
     },
     {
       title: "JMI Industries : location de voitures",
-      description: "Création d'un site sous Symfony en collaboration. Les utilisateurs peuvent louer des véhicules, consulter leur historique et gérer leur compte. Les loueurs gèrent les stocks et la disponibilité des véhicules",
+      description: "Création d'un site sous Symfony. Les utilisateurs peuvent louer des véhicules, consulter leur historique et gérer leur compte. Les loueurs gèrent les stocks et la disponibilité des véhicules",
       icons: [<FaSymfony />, <FaPhp />],
       images: [jmi, jmiweb],
       links: [
