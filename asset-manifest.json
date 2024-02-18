@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.884d336f.css",
-    "main.js": "/portfolio/static/js/main.be19e7b2.js",
+    "main.js": "/portfolio/static/js/main.de9e36a4.js",
     "static/media/AldiBnbWeb.gif": "/portfolio/static/media/AldiBnbWeb.5a8d655d07d731619817.gif",
     "static/media/LeafUp11.gif": "/portfolio/static/media/LeafUp11.63f13bc114550cda435e.gif",
     "static/media/SalineWeb.gif": "/portfolio/static/media/SalineWeb.74bf8014c536b6b3d7e9.gif",
@@ -18,7 +18,7 @@
     "static/media/test.png": "/portfolio/static/media/test.ad0b52da3a709bc167b0.png",
     "static/media/photo.png": "/portfolio/static/media/photo.12d5144a2e7a602a10ee.png",
     "static/media/WorldMap.svg": "/portfolio/static/media/WorldMap.5fee082ea7bb82262e3b.svg",
-    "static/media/CV_Soumare_Alternance_Web.pdf": "/portfolio/static/media/CV_Soumare_Alternance_Web.8ddf8e0db7ee192588b1.pdf",
+    "static/media/CV_Soumare_Alternance_Web.pdf": "/portfolio/static/media/CV_Soumare_Alternance_Web.cd003e8c5f3060854ecf.pdf",
     "static/media/MySQL.svg": "/portfolio/static/media/MySQL.6876431205f21e456e9ed07f85046750.svg",
     "static/media/PHP.svg": "/portfolio/static/media/PHP.3ca2e286c6aba1bac6f11160436c8e91.svg",
     "static/media/java.svg": "/portfolio/static/media/java.68585ce8dadbd8ecebdc99a764c5c1cf.svg",
@@ -36,10 +36,10 @@
     "index.html": "/portfolio/index.html",
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
     "main.884d336f.css.map": "/portfolio/static/css/main.884d336f.css.map",
-    "main.be19e7b2.js.map": "/portfolio/static/js/main.be19e7b2.js.map"
+    "main.de9e36a4.js.map": "/portfolio/static/js/main.de9e36a4.js.map"
   },
   "entrypoints": [
     "static/css/main.884d336f.css",
-    "static/js/main.be19e7b2.js"
+    "static/js/main.de9e36a4.js"
   ]
 }
