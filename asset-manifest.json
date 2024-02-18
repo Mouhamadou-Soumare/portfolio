@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.22241e05.css",
-    "main.js": "/portfolio/static/js/main.275b9c76.js",
+    "main.css": "/portfolio/static/css/main.672ab5b9.css",
+    "main.js": "/portfolio/static/js/main.be19e7b2.js",
     "static/media/AldiBnbWeb.gif": "/portfolio/static/media/AldiBnbWeb.5a8d655d07d731619817.gif",
     "static/media/LeafUp11.gif": "/portfolio/static/media/LeafUp11.63f13bc114550cda435e.gif",
     "static/media/SalineWeb.gif": "/portfolio/static/media/SalineWeb.74bf8014c536b6b3d7e9.gif",
     "static/media/chargeinweb.gif": "/portfolio/static/media/chargeinweb.87706c0b47ec558f86d7.gif",
     "static/media/AldiBnb.gif": "/portfolio/static/media/AldiBnb.01496371a74cc5c7e9ba.gif",
     "static/media/SalineMobile.gif": "/portfolio/static/media/SalineMobile.64859cb9ff907a2dc608.gif",
+    "static/media/mangi_mobile.gif": "/portfolio/static/media/mangi_mobile.1aa53ac795e89a3bbfb6.gif",
     "static/media/chargeinmobile.gif": "/portfolio/static/media/chargeinmobile.49de3759c7e4aa07c9f9.gif",
     "static/media/mobile.gif": "/portfolio/static/media/mobile.70a6a249dc79dac38077.gif",
+    "static/media/mangi_desktop.gif": "/portfolio/static/media/mangi_desktop.98ee26dfb3723ba46906.gif",
     "static/media/jmiweb.gif": "/portfolio/static/media/jmiweb.b22ecae04fb1b9ea87a5.gif",
     "static/media/leafupweb.gif": "/portfolio/static/media/leafupweb.53125ee169780526c78b.gif",
     "static/media/SOUMARE_Mouhamadou_SPE2_P2023.pdf": "/portfolio/static/media/SOUMARE_Mouhamadou_SPE2_P2023.288420a9f8541a7e1686.pdf",
     "static/media/test.png": "/portfolio/static/media/test.ad0b52da3a709bc167b0.png",
-    "static/media/CV_Soumare _Developpeur _Web.pdf": "/portfolio/static/media/CV_Soumare _Developpeur _Web.a280fe4af04b0cc6ec57.pdf",
     "static/media/photo.png": "/portfolio/static/media/photo.12d5144a2e7a602a10ee.png",
     "static/media/WorldMap.svg": "/portfolio/static/media/WorldMap.5fee082ea7bb82262e3b.svg",
+    "static/media/CV_Soumare_Alternance_Web.pdf": "/portfolio/static/media/CV_Soumare_Alternance_Web.8ddf8e0db7ee192588b1.pdf",
     "static/media/MySQL.svg": "/portfolio/static/media/MySQL.6876431205f21e456e9ed07f85046750.svg",
     "static/media/PHP.svg": "/portfolio/static/media/PHP.3ca2e286c6aba1bac6f11160436c8e91.svg",
     "static/media/java.svg": "/portfolio/static/media/java.68585ce8dadbd8ecebdc99a764c5c1cf.svg",
@@ -33,11 +35,11 @@
     "static/media/css.svg": "/portfolio/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "index.html": "/portfolio/index.html",
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.22241e05.css.map": "/portfolio/static/css/main.22241e05.css.map",
-    "main.275b9c76.js.map": "/portfolio/static/js/main.275b9c76.js.map"
+    "main.672ab5b9.css.map": "/portfolio/static/css/main.672ab5b9.css.map",
+    "main.be19e7b2.js.map": "/portfolio/static/js/main.be19e7b2.js.map"
   },
   "entrypoints": [
-    "static/css/main.22241e05.css",
-    "static/js/main.275b9c76.js"
+    "static/css/main.672ab5b9.css",
+    "static/js/main.be19e7b2.js"
   ]
 }
