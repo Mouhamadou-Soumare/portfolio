@@ -1,20 +1,21 @@
 import React from "react";
 import "./experience.css";
-import html from "../../assets/icons/html.svg";
-import reactjs from "../../assets/icons/react-js.svg";
-import bootstrap from "../../assets/icons/bootstrap.svg";
-import tailwind from "../../assets/icons/tailwind.svg";
-import js from "../../assets/icons/js.svg";
-import css from "../../assets/icons/css.svg";
-import php from "../../assets/icons/PHP.svg";
-import mysql from "../../assets/icons/MySQL.svg";
-import symfony from "../../assets/icons/symfony.svg";
-import cplusplus from "../../assets/icons/c++.svg";
-import docker from "../../assets/icons/docker.svg";
-import figma from "../../assets/icons/figma.svg";
-import wordpress from "../../assets/icons/wordrpess.svg";
-import prestashop from "../../assets/icons/Prestashop.svg";
-import java from "../../assets/icons/java.svg";
+import { ReactComponent as HtmlIcon } from "../../assets/icons/html.svg";
+import { ReactComponent as ReactJsIcon } from "../../assets/icons/react-js.svg";
+import { ReactComponent as BootstrapIcon } from "../../assets/icons/bootstrap.svg";
+import { ReactComponent as TailwindIcon } from "../../assets/icons/tailwind.svg";
+import { ReactComponent as JsIcon } from "../../assets/icons/js.svg";
+import { ReactComponent as CssIcon } from "../../assets/icons/css.svg";
+import { ReactComponent as PhpIcon } from "../../assets/icons/PHP.svg";
+import { ReactComponent as MysqlIcon } from "../../assets/icons/MySQL.svg";
+import { ReactComponent as SymfonyIcon } from "../../assets/icons/symfony.svg";
+import { ReactComponent as CPlusPlusIcon } from "../../assets/icons/c++.svg";
+import { ReactComponent as DockerIcon } from "../../assets/icons/docker.svg";
+import { ReactComponent as FigmaIcon } from "../../assets/icons/figma.svg";
+import { ReactComponent as WordpressIcon } from "../../assets/icons/wordrpess.svg";
+import { ReactComponent as PrestashopIcon } from "../../assets/icons/Prestashop.svg";
+import { ReactComponent as JavaIcon } from "../../assets/icons/java.svg";
+import { ReactComponent as NodeIcon } from "../../assets/icons/node.svg";
 
 const Experience = () => {
   return (
@@ -27,37 +28,37 @@ const Experience = () => {
           <h3>Frontend</h3>
           <div className="experience__content">
             <article className="experience__details">
-              <img src={reactjs} alt="react" />
+              <ReactJsIcon />
               <div>
                 <h4>React</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={bootstrap} alt="bootstrap" />
+              <BootstrapIcon />
               <div>
                 <h4>Bootstrap</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={tailwind} alt="tailwind" />
+              <TailwindIcon />
               <div>
                 <h4>Tailwind</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={js} alt="javascript" />
+              <JsIcon />
               <div>
                 <h4>JavaScript</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={html} alt="html" />
+              <HtmlIcon />
               <div>
                 <h4>HTML</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={css} alt="css" />
+              <CssIcon />
               <div>
                 <h4>CSS</h4>
               </div>
@@ -68,30 +69,33 @@ const Experience = () => {
           <h3>Backend</h3>
           <div className="experience__content">
             <article className="experience__details">
-              <img src={php} alt="php" />
+              <PhpIcon />
               <div>
                 <h4>PHP</h4>
               </div>
             </article>
-
-          
             <article className="experience__details">
-              <img src={symfony} alt="symfony" />
+              <SymfonyIcon />
               <div>
-                {" "}
                 <h4>Symfony</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={cplusplus} alt="c++" />
+              <CPlusPlusIcon />
               <div>
                 <h4>C++</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={java} alt="java" />
+              <JavaIcon />
               <div>
                 <h4>Java</h4>
+              </div>
+            </article>
+            <article className="experience__details">
+              <NodeIcon />
+              <div>
+                <h4>Node</h4>
               </div>
             </article>
           </div>
@@ -100,33 +104,31 @@ const Experience = () => {
           <h3>Autres</h3>
           <div className="experience__content">
             <article className="experience__details">
-              <img src={docker} alt="docker" />
+              <DockerIcon />
               <div>
                 <h4>Docker</h4>
               </div>
             </article>
-
             <article className="experience__details">
-              <img src={figma} alt="figma" />
+              <FigmaIcon />
               <div>
                 <h4>Figma</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={wordpress} alt="wordpress" />
+              <WordpressIcon />
               <div>
-                {" "}
                 <h4>WordPress</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={prestashop} alt="prestashop" />
+              <PrestashopIcon />
               <div>
                 <h4>Prestashop</h4>
               </div>
             </article>
             <article className="experience__details">
-              <img src={mysql} alt="mysql" />
+              <MysqlIcon />
               <div>
                 <h4>PhpMyAdmin</h4>
               </div>

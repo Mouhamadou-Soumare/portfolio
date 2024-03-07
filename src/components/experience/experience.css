@@ -38,7 +38,7 @@
 	margin-block: auto;
 }
 
-.experience__details img {
+.experience__details svg {
 	width: 48px;
 	height: fit-content;
 	animation: animSkill2 2s infinite linear alternate;
