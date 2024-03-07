@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.884d336f.css",
-    "main.js": "/portfolio/static/js/main.de9e36a4.js",
+    "main.css": "/portfolio/static/css/main.a50c3204.css",
+    "main.js": "/portfolio/static/js/main.2aa6f6d5.js",
     "static/media/AldiBnbWeb.gif": "/portfolio/static/media/AldiBnbWeb.5a8d655d07d731619817.gif",
     "static/media/LeafUp11.gif": "/portfolio/static/media/LeafUp11.63f13bc114550cda435e.gif",
     "static/media/SalineWeb.gif": "/portfolio/static/media/SalineWeb.74bf8014c536b6b3d7e9.gif",
@@ -18,9 +18,10 @@
     "static/media/test.png": "/portfolio/static/media/test.ad0b52da3a709bc167b0.png",
     "static/media/photo.png": "/portfolio/static/media/photo.12d5144a2e7a602a10ee.png",
     "static/media/WorldMap.svg": "/portfolio/static/media/WorldMap.5fee082ea7bb82262e3b.svg",
-    "static/media/CV_Soumare_Alternance_Web.pdf": "/portfolio/static/media/CV_Soumare_Alternance_Web.cd003e8c5f3060854ecf.pdf",
+    "static/media/CV_Soumare_Alternance_Web.pdf": "/portfolio/static/media/CV_Soumare_Alternance_Web.a77dd67b1beb169edcfa.pdf",
     "static/media/MySQL.svg": "/portfolio/static/media/MySQL.6876431205f21e456e9ed07f85046750.svg",
     "static/media/PHP.svg": "/portfolio/static/media/PHP.3ca2e286c6aba1bac6f11160436c8e91.svg",
+    "static/media/node.svg": "/portfolio/static/media/node.dd47e26ed1d7dddf018e5cbffc40f76d.svg",
     "static/media/java.svg": "/portfolio/static/media/java.68585ce8dadbd8ecebdc99a764c5c1cf.svg",
     "static/media/react-js.svg": "/portfolio/static/media/react-js.4ee8d0003d0f7f9ccea03ac4aa13fb99.svg",
     "static/media/Prestashop.svg": "/portfolio/static/media/Prestashop.3fb8da1537bee7a31a43e39f544662cb.svg",
@@ -35,11 +36,11 @@
     "static/media/css.svg": "/portfolio/static/media/css.3ec320225ef851ed26cf9fd1c6ebaa54.svg",
     "index.html": "/portfolio/index.html",
     "static/media/html.svg": "/portfolio/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
-    "main.884d336f.css.map": "/portfolio/static/css/main.884d336f.css.map",
-    "main.de9e36a4.js.map": "/portfolio/static/js/main.de9e36a4.js.map"
+    "main.a50c3204.css.map": "/portfolio/static/css/main.a50c3204.css.map",
+    "main.2aa6f6d5.js.map": "/portfolio/static/js/main.2aa6f6d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.884d336f.css",
-    "static/js/main.de9e36a4.js"
+    "static/css/main.a50c3204.css",
+    "static/js/main.2aa6f6d5.js"
   ]
 }
