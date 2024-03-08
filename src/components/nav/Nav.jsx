@@ -29,6 +29,13 @@ const Nav = () => {
         <AiOutlineUser />
       </a>
       <a
+        href="#projets"
+        onClick={() => setActiveNav("#projets")}
+        className={activeNav === "#projets" ? "active" : ""}
+      >
+        <BsCode />
+      </a>
+      <a
         href="#experience"
         onClick={() => setActiveNav("#experience")}
         className={activeNav === "#experience" ? "active" : ""}
@@ -42,14 +49,7 @@ const Nav = () => {
       >
         <GiStairsGoal />
       </a>
-      <a
-        href="#projets"
-        onClick={() => setActiveNav("#projets")}
-        className={activeNav === "#projets" ? "active" : ""}
-      >
-        <BsCode />
-      </a>
-      {/* <a href="#contact"  onClick={() =>setActiveNav('#contact')}  className={activeNav === '#contact' ? 'active': ''}><BiMessageSquareDetail/></a> */}
+      
       <DarkMode />
     </nav>
   );
