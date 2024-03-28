@@ -87,12 +87,6 @@ const Experience = () => {
               </div>
             </article>
             <article className="experience__details">
-              <JavaIcon />
-              <div>
-                <h4>Java</h4>
-              </div>
-            </article>
-            <article className="experience__details">
               <NodeIcon />
               <div>
                 <h4>Node</h4>

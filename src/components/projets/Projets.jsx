@@ -15,21 +15,22 @@ import salineWeb from "../../assets/SalineWeb.gif";
 import SalineMobile from "../../assets/SalineMobile.gif";
 import mangiWeb from "../../assets/mangi_desktop.gif";
 import mangiMobile from "../../assets/mangi_mobile.gif";
+import sportSyncWeb from "../../assets/sportsyncweb.gif";
+import sportSyncMobile from "../../assets/sportsyncmobile.gif";
 
 
 import RapportSaline from "../../assets/SOUMARE_Mouhamadou_SPE2_P2023.pdf";
 import { FaCode, FaPhp,FaHandPaper,FaSymfony,FaWordpress, FaReact, FaGlobe,FaDocker,FaPython, FaNodeJs} from "react-icons/fa";
 import {SiTypescript,SiRedux} from "react-icons/si";
 import {BsFillFileEarmarkPdfFill} from "react-icons/bs";
+import { TbApi } from "react-icons/tb";
 
-// import { RxLink2 } from "react-icons/rx";
 
 const Projets = () => {
   const carrousel = useRef();
 
-  const [maxHeight, setMaxHeight] = useState(0); // Initialize maxHeight state
+  const [maxHeight, setMaxHeight] = useState(0);
 
-  // Calculate and update the maximum height among items
   useEffect(() => {
     const itemElements = document.querySelectorAll(".item");
     let maxItemHeight = 0;
@@ -42,9 +43,25 @@ const Projets = () => {
 
   const projects = [
     {
+      title: "SportSync - La meilleur app pour suivre vos sports préférés ",
+      description: "Projet de création d'un site web utilisant une stack Node.js, React et une API pour les données. SportSync vous permet de rester toujours connecté(e) aux événements et actualités sportives.",
+      icons: [<FaReact />, <FaNodeJs />,  <TbApi />],
+      images: [sportSyncMobile , sportSyncWeb ],
+      links: [
+        {
+          icon: <FaCode />,
+          url: "https://github.com/Mouhamadou-Soumare/sportsync",
+        },
+        // {
+        //   icon: <FaGlobe />,
+        //   url: "https://mangi-client.vercel.app/",
+        // },
+      ],
+    },
+    {
       title: "Manĝi : Votre Réalité Augmentée Alimentaire",
       description: "Workshop, création d'un site pour une solution AR. Découvrez une nouvelle façon de connaître vos produits alimentaires avec Manĝi, notre solution révolutionnaire de réalité augmentée.      ",
-      icons: [<FaReact />, <FaNodeJs />],
+      icons: [<FaReact />, <FaNodeJs />, <TbApi /> ],
       images: [mangiMobile, mangiWeb],
       links: [
         {
