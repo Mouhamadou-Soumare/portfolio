@@ -30,6 +30,7 @@ const Projets = () => {
   const carrousel = useRef();
 
   const [maxHeight, setMaxHeight] = useState(0);
+  const [isVisible, setIsVisible] = useState(false); // Nouvel état pour suivre la visibilité du composant
 
   useEffect(() => {
     const itemElements = document.querySelectorAll(".item");
@@ -39,8 +40,30 @@ const Projets = () => {
       maxItemHeight = Math.max(maxItemHeight, itemHeight);
     });
     setMaxHeight(maxItemHeight);
-  }, []);
 
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      });
+    }, options);
+
+    observer.observe(carrousel.current);
+
+    return () => {
+      observer.unobserve(carrousel.current);
+    };
+  }, []);
+  
   const projects = [
     {
       title: "SportSync - La meilleur app pour suivre vos sports préférés ",
@@ -164,7 +187,7 @@ const Projets = () => {
 
 
   return (
-    <section id="projets">
+    <section id="projets" ref={carrousel}>
       <div className="titre-projets-section">
       <h2><FaHandPaper/></h2>
         <h5>Maintenez le bouton gauche de la souris enfoncé et faites glisser le slider  </h5>
@@ -192,7 +215,7 @@ const Projets = () => {
         <div className="curtain-element"></div>
       </div>
       
-      <Slider ref={carrousel} {...settings} className="carrousel">
+      <Slider {...settings} className="carrousel">
 
           {projects.map((project, index) => (
       <motion.div className={'item'} key={index} style={{ height: `${maxHeight}px` }}>
