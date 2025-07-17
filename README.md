@@ -1,5 +1,5 @@
 <h2 align="center">
-  Portfolio - v1.0<br/>
+  OLD Portfolio - v1.0<br/>
   <a href="https://mouhamadou-soumare.github.io/portfolio/" target="_blank">Mouhamadou.soumare</a>
 </h2>
 <div align="center">
