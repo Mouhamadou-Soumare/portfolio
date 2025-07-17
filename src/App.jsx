@@ -9,7 +9,6 @@ import Footer from "./components/footer/Footer";
 import Particle from "./components/particleBack/Particle";
 import {Helmet} from "react-helmet"
 
-
 const App = () => {
   return (
    <div>
